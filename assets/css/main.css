@@ -3252,6 +3252,17 @@ img.mfp-img {
   transform: translateY(-1px);
 }
 
+/* Global (esp. dark-mode) link color rules override .cover-badge - force white */
+a.cover-badge,
+a.cover-badge:visited,
+a.cover-badge:hover,
+[data-theme="dark"] a.cover-badge,
+[data-theme="dark"] a.cover-badge:visited,
+[data-theme="dark"] a.cover-badge:hover,
+[data-theme="dark"] .cover-badge {
+  color: #ffffff;
+}
+
 /* Publications responsive: mobile */
 @media only screen and (max-width: 480px) {
   .publications-grid {
