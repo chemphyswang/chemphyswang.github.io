@@ -4511,6 +4511,9 @@ body,
 
 [data-theme="dark"] .hobby-quote {
   color: #a8a8b4;
+  /* Mobile card variant has a light background - reset it to a dark surface */
+  background: linear-gradient(135deg, #1c1c22, #24242c);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 [data-theme="dark"] .hobby-quote .quote-text {
@@ -4575,7 +4578,12 @@ body,
 
 [data-theme="dark"] .mobile-contact-item i,
 [data-theme="dark"] .mobile-contact-item .contact-icon-svg {
-  color: #8c8c9a;
+  color: #e8e8ec;
+}
+
+/* The inline layout styles set colors directly on span/icons - override them */
+[data-theme="dark"] .mobile-contact-item span {
+  color: #f0f0f4;
 }
 
 [data-theme="dark"] .mobile-contact-item:active {
