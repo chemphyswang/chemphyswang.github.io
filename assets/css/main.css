@@ -3646,6 +3646,10 @@ img.mfp-img {
   position: relative;
 }
 
+.hobby-quote .quote-text {
+  color: #990000;
+}
+
 .hobby-quote::before {
   content: '"';
   font-size: 3em;
@@ -4507,6 +4511,10 @@ body,
 
 [data-theme="dark"] .hobby-quote {
   color: #a8a8b4;
+}
+
+[data-theme="dark"] .hobby-quote .quote-text {
+  color: #f0f0f4;
 }
 
 [data-theme="dark"] .hobby-quote::before,

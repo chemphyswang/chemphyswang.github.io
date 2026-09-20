@@ -180,7 +180,7 @@ Tao Wang is currently an associate professor in the School of Materials Science 
 </script>
 
 <div class="hobby-quote">
-<font color="#990000"><strong>An experiment is a question which Science poses to Nature and a measurement is the recording of Nature's answer. -- Max Planck</strong></font>
+<strong class="quote-text">An experiment is a question which Science poses to Nature and a measurement is the recording of Nature's answer. -- Max Planck</strong>
 </div>
 ---
 
