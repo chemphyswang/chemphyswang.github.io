@@ -2,95 +2,135 @@
 layout: page
 ---
 
-# About Me
+## About Tao
 
-<img src="/images/dengsiming.jpg" class="floatpic">
+<img src="/images/avatar.jpg" class="floatpic">
 
-Here is **Siming Deng (Larry Deng)**.<br>
+**Tao Wang, PhD, Assoc. Prof.**.<br>
 
-I am a graduate student in the Department of [Electrical and Systems Engineering (ESE)](https://www.ese.upenn.edu/) at the [Penn Engineering](https://www.seas.upenn.edu/) of the **University of Pennsylvania**. Currently, I build **agentic AI tools and infrastructure** for iPhone hardware testing, spanning agent runtimes (multi-agent orchestration and tool use), on-device inference with **Apple MLX**, closed-loop test optimization, and **Vision Transformers** for distribution diagnosis. Broadly, my interests lie at the intersection of **AI infrastructure, applied ML, and hardware systems**. Prior to joining Penn, I gained valuable research experiences as a Research Assistant at Shenzhen University under the supervision of [Dr. Jun Zhang](https://www.researchgate.net/profile/Jun_Zhang93). My work focused on **Nonparametric Statistics**, **Distortion Measurement Error Models**, and **Large Sample Theory**. I developed and analyzed advanced statistical methods, conducted large-scale simulations, and applied these techniques to real-world datasets, resulting in five SCI publications.<br>
+Tao Wang is currently an associate professor in the School of Materials Science & Engineering at the [Beijing Institute of Technology](https://www.bit.edu.cn/). He obtained his Ph.D. in 2019 from the [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/) under the supervision of Professors [Guoqing Zhang](https://www.hfnl.ustc.edu.cn/2022/0905/c36716a705572/page.htm) and Xingyuan Zhang, where he worked on luminescent polymers. Following this, he joined the Hefei National Laboratory of Physical Science at the Microscale at USTC as a postdoctoral fellow, continuing his work with Professor [Guoqing Zhang](https://www.hfnl.ustc.edu.cn/2022/0905/c36716a705572/page.htm) (2019–2020). In 2020, he was awarded the prestigious [Marie Skłodowska-Curie Research Fellowship](https://cordis.europa.eu/project/id/897098) and moved to the [University of St Andrews](https://www.st-andrews.ac.uk/) to work with Professor [Eli Zysman-Colman](https://www.zysman-colman.com/home). In 2022, he joined the [National University of Singapore](https://www.nus.edu.sg/) to collaborate with Professor [Xiaogang Liu](http://liuxg.science.nus.edu.sg/). In 2024, Tao joined the [Beijing Institute of Technology](https://www.bit.edu.cn/). His research focuses on organic luminescent materials for diverse applications, and he has authored more than 45 publications.<br>
 
-## Work Experience
+## Research Interests
+
+- Design of Room-Temperature Phosphorescence Materials
+- Design of Thermally Activated Delayed Fluorescence Materials
+- Exploration of Applications for Optoelectronic Materials
+<br>
+
+## Work Experience and Education
 
 <div class="timeline">
   <div class="timeline-progress" id="timeline-progress"></div>
 
   <div class="timeline-item timeline-item--current">
     <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/apple.svg" alt="Apple">
+      <img class="logo-lg" src="/images/logo/bit.svg" alt="Beijing Institute of Technology">
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role">Software Engineer <span class="timeline-sep">|</span> <span class="timeline-company">Apple Inc.</span></div>
-        <span class="timeline-time">Jan. 2026 - Present</span>
+        <div class="timeline-role">Associate Professor <span class="timeline-sep">|</span> <span class="timeline-company">Beijing Institute of Technology</span></div>
+        <span class="timeline-time">Jul. 2024 - Present</span>
       </div>
       <div class="timeline-details">
-        Developed AI agent tools for iPhone hardware testing, enhancing automated diagnostics workflows and improving large-scale test efficiency.
+        Beijing, China
       </div>
     </div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/upenn.svg" alt="UPenn">
+      <img src="/images/logo/nus.svg" alt="National University of Singapore">
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role">Research Assistant <span class="timeline-sep">|</span> <span class="timeline-company">University of Pennsylvania</span></div>
-        <span class="timeline-time">Nov. 2025 - Jan. 2026</span>
+        <div class="timeline-role">Postdoctoral Research Fellow <span class="timeline-sep">|</span> <span class="timeline-company">National University of Singapore</span></div>
+        <span class="timeline-time">Nov. 2022 - Jun. 2024</span>
       </div>
       <div class="timeline-details">
-        ViT-driven image geolocation.
+        Singapore · With Professor Xiaogang Liu
       </div>
     </div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/sf.svg" alt="SF Express">
+      <img src="/images/logo/standrews.svg" alt="University of St Andrews">
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role">Software Engineer <span class="timeline-sep">|</span> <span class="timeline-company">SF Express</span></div>
-        <span class="timeline-time">May. 2025 - Jul. 2025</span>
+        <div class="timeline-role">Postdoctoral Research Fellow; Marie Skłodowska-Curie Fellow <span class="timeline-sep">|</span> <span class="timeline-company">University of St Andrews</span></div>
+        <span class="timeline-time">Oct. 2020 - Nov. 2022</span>
       </div>
       <div class="timeline-details">
-        Delivered microservice modules for the order management system.
+        St Andrews, United Kingdom · With Professor Eli Zysman-Colman
       </div>
     </div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/boc.svg" alt="Bank of China">
+      <img class="logo-lg" src="/images/logo/ustc.svg" alt="University of Science and Technology of China">
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role">Software Engineer <span class="timeline-sep">|</span> <span class="timeline-company">Bank of China</span></div>
-        <span class="timeline-time">Jul. 2024 - Sep. 2024</span>
+        <div class="timeline-role">Postdoctoral Fellow <span class="timeline-sep">|</span> <span class="timeline-company">University of Science and Technology of China</span></div>
+        <span class="timeline-time">Jul. 2019 - Oct. 2020</span>
       </div>
       <div class="timeline-details">
-        Involved in the deployment and fine-tuning of large language models in internal banking systems.
+        Hefei, China · With Professor Guoqing Zhang
       </div>
     </div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-dot" style="background: #ffffff;">
-      <img src="/images/logo/szu.svg" alt="Shenzhen University">
+      <img class="logo-lg" src="/images/logo/ustc.svg" alt="University of Science and Technology of China">
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role">Research Assistant <span class="timeline-sep">|</span> <span class="timeline-company"><a href="https://bdsc.szu.edu.cn/">Big Data Institute, Shenzhen University</a></span></div>
-        <span class="timeline-time">2023 - 2024</span>
+        <div class="timeline-role">Ph.D. in Polymer Chemistry and Physics <span class="timeline-sep">|</span> <span class="timeline-company">University of Science and Technology of China</span></div>
+        <span class="timeline-time">Sep. 2014 - Jun. 2019</span>
       </div>
       <div class="timeline-details">
-        Supervised by Distinguished Professor <a href="https://dblp.org/pid/h/JoshuaZhexueHuang.html">Joshua Zhexue Huang</a>. Carried out optimizations on data processing and clustering algorithms by leveraging distributed approximate computing techniques.
+        Hefei, Anhui, China · Supervisors: Prof. Guoqing Zhang and Prof. Xingyuan Zhang
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot" style="background: #ffffff;">
+      <img class="logo-lg" src="/images/logo/anhui.svg" alt="Anhui University">
+    </div>
+    <div class="timeline-card">
+      <div class="timeline-header">
+        <div class="timeline-role">B.E. in Polymer Materials and Engineering <span class="timeline-sep">|</span> <span class="timeline-company">Anhui University</span></div>
+        <span class="timeline-time">Sep. 2010 - Jul. 2014</span>
+      </div>
+      <div class="timeline-details">
+        Hefei, Anhui, China
       </div>
     </div>
   </div>
 
 </div>
+
+## Honors and Awards
+
+- Aggregate "Emerging Investigators" (2025)
+- Marie Skłodowska-Curie Fellow (2020)
+
+## Teaching
+
+- Advanced Sensing Materials and Devices
+
+## Postgraduate Supervision
+
+- Shikai Yu
+- Xinrui Li
+- Hua Jiang
+- Jing Chen
+- Aoyuan Cheng
+- Hongping Liu
 
 <script>
 (function() {
@@ -139,196 +179,11 @@ I am a graduate student in the Department of [Electrical and Systems Engineering
 })();
 </script>
 
-If you are interested in any aspect of me, I am always open to discussions and collaborations. Feel free to reach out to me at - siming_deng_stat [at] 163.com
-
-**<font color="#990000">Seeking Software Engineer and Machine Learning roles — AI Infrastructure, Applied AI / Agents, and ML Systems. Feel free to reach out!</font>**
-
----
-
-## Publications
-
-<div class="publications-grid">
-
-  <div class="publication-card">
-    <div class="publication-thumb">
-      <img src="/images/papers/paper1.svg" alt="Innovative covariance-based framework">
-      <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2026.2635000" class="publication-overlay" target="_blank" rel="noopener">
-        <span>View Paper</span>
-      </a>
-    </div>
-    <div class="publication-info">
-      <div class="publication-title">
-        <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2026.2635000" target="_blank" rel="noopener">Innovative covariance-based framework: symmetry assessment and exponentiality testing under multiplicative distortion measurement Errors</a>
-      </div>
-      <div class="publication-authors"><strong class="author-highlight">Siming Deng</strong>, Jun Zhang, Jiongtao Zhong</div>
-      <div class="publication-conference"><span class="pub-venue">Communications in Statistics - Simulation and Computation, 2026</span> <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2026.2635000" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, first author</div>
-    </div>
-  </div>
-
-  <div class="publication-card">
-    <div class="publication-thumb">
-      <img src="/images/papers/paper2.svg" alt="A New Logarithmic Multiplicative Distortion">
-      <a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11708" class="publication-overlay" target="_blank" rel="noopener">
-        <span>View Paper</span>
-      </a>
-    </div>
-    <div class="publication-info">
-      <div class="publication-title">
-        <a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11708" target="_blank" rel="noopener">A New Logarithmic Multiplicative Distortion for Correlation Analysis</a>
-      </div>
-      <div class="publication-authors"><strong class="author-highlight">Siming Deng</strong>, Jun Zhang</div>
-      <div class="publication-conference"><span class="pub-venue">Statistical Analysis and Data Mining, 2024</span> <a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11708" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, JCR: Q1, first author, Top Cited Article - WILEY 2025</div>
-    </div>
-  </div>
-
-  <div class="publication-card">
-    <div class="publication-thumb">
-      <img src="/images/papers/paper3.svg" alt="A Revisit to Pearson Correlation Coefficient">
-      <a href="https://www.tandfonline.com/doi/full/10.1080/03610918.2024.2333352" class="publication-overlay" target="_blank" rel="noopener">
-        <span>View Paper</span>
-      </a>
-    </div>
-    <div class="publication-info">
-      <div class="publication-title">
-        <a href="https://www.tandfonline.com/doi/full/10.1080/03610918.2024.2333352" target="_blank" rel="noopener">A Revisit to Pearson Correlation Coefficient under Multiplicative Distortions</a>
-      </div>
-      <div class="publication-authors"><strong class="author-highlight">Siming Deng</strong>, Jun Zhang, Yingcong Huang, Jiongtao Zhong & Xiaozhen Yang</div>
-      <div class="publication-conference"><span class="pub-venue">Communications in Statistics - Simulation and Computation, 2024</span> <a href="https://www.tandfonline.com/doi/full/10.1080/03610918.2024.2333352" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, first author, Highly Cited Paper - Web of Science</div>
-    </div>
-  </div>
-
-  <div class="publication-card">
-    <div class="publication-thumb">
-      <img src="/images/papers/paper4.svg" alt="Covariance Ratio under Multiplicative Distortion">
-      <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2295240" class="publication-overlay" target="_blank" rel="noopener">
-        <span>View Paper</span>
-      </a>
-    </div>
-    <div class="publication-info">
-      <div class="publication-title">
-        <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2295240" target="_blank" rel="noopener">Covariance Ratio under Multiplicative Distortion Measurement Errors</a>
-      </div>
-      <div class="publication-authors">Jiongtao Zhong, <strong class="author-highlight">Siming Deng</strong>, Jun Zhang & Zhenghui Feng</div>
-      <div class="publication-conference"><span class="pub-venue">Communications in Statistics - Theory and Methods, 2023</span> <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2295240" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, 2nd-author</div>
-    </div>
-  </div>
-
-  <div class="publication-card">
-    <div class="publication-thumb">
-      <img src="/images/papers/paper5.svg" alt="Estimation of Correlation Coefficient">
-      <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2288794" class="publication-overlay" target="_blank" rel="noopener">
-        <span>View Paper</span>
-      </a>
-    </div>
-    <div class="publication-info">
-      <div class="publication-title">
-        <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2288794" target="_blank" rel="noopener">Estimation of Correlation Coefficient with Monotone Transformation and Multiplicative Distortions</a>
-      </div>
-      <div class="publication-authors">Jun Zhang, Xuan Yu, <strong class="author-highlight">Siming Deng</strong>, Jiongtao Zhong, Yisheng Zhou & Bingqing Lin</div>
-      <div class="publication-conference"><span class="pub-venue">Communications in Statistics - Theory and Methods, 2023</span> <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2023.2288794" target="_blank">[paper]</a></div>
-      <div class="publication-details">SCI, 3rd-author</div>
-    </div>
-  </div>
-
+<div class="hobby-quote">
+<font color="#990000"><strong>An experiment is a question which Science poses to Nature and a measurement is the recording of Nature's answer. -- Max Planck</strong></font>
 </div>
-
-<script>
-(function() {
-  if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.publication-card').forEach(function(card) {
-      observer.observe(card);
-    });
-  } else {
-    document.querySelectorAll('.publication-card').forEach(function(card) {
-      card.classList.add('animate-in');
-    });
-  }
-})();
-</script>
-
 ---
 
-## Research Interests
+## Recent Publications
 
-- ML Systems & AI Infrastructure
-- Efficient & On-Device Inference (Apple MLX, SGLang)
-- Agentic AI (multi-agent orchestration & tool use)
-- Machine Learning
-- Nonparametric Statistics
-
-I currently work at the intersection of **AI infrastructure and applied ML**, building agent runtimes and optimizing LLM inference.
-
-Previously, my research centered on **nonparametric statistics** and **measurement-error modeling**, unobservable-variable estimation under multiplicative distortion frameworks, where I developed calibration methods and simulation studies to improve correlation-coefficient estimation in complex industrial settings, resulting in five SCI publications.
-<img src="/images/sunset.jpg">
-
----
-
-## News and Updates
-
-<div class="news-grid">
-  <div class="news-card news-card--publication">
-    <div class="news-meta">
-      <span class="news-date">February 2026</span>
-      <span class="news-tag news-tag--publication">Publication</span>
-    </div>
-    <p>First-Author Paper: <a href="https://www.tandfonline.com/doi/abs/10.1080/03610918.2026.2635000"><strong>Innovative covariance-based framework: symmetry assessment and exponentiality testing under multiplicative distortion measurement Errors</strong></a> Now Officially Published in <a href="https://www.tandfonline.com/journals/lssp20">Communications in Statistics - Simulation and Computation</a></p>
-  </div>
-
-  <div class="news-card news-card--milestone">
-    <div class="news-meta">
-      <span class="news-date">Jan 2026</span>
-      <span class="news-tag news-tag--milestone">Milestone</span>
-    </div>
-    <p>Excited to have received an offer from Apple!</p>
-  </div>
-
-  <div class="news-card news-card--milestone">
-    <div class="news-meta">
-      <span class="news-date">March 2025</span>
-      <span class="news-tag news-tag--milestone">Milestone</span>
-    </div>
-    <p>Thrilled to have received an offer from UPenn Engineering!</p>
-  </div>
-
-  <div class="news-card news-card--publication">
-    <div class="news-meta">
-      <span class="news-date">August 2024</span>
-      <span class="news-tag news-tag--publication">Publication</span>
-    </div>
-    <p>First-Author Paper: <a href="https://onlinelibrary.wiley.com/doi/10.1002/sam.11708"><strong>A New Logarithmic Multiplicative Distortion for Correlation Analysis</strong></a> Now Officially Published in <a href="https://onlinelibrary.wiley.com/journal/19321872">Statistical Analysis and Data Mining</a> (JCR Q1)</p>
-  </div>
-</div>
-
-<script>
-(function() {
-  if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
-    document.querySelectorAll('.news-card').forEach(function(card) {
-      observer.observe(card);
-    });
-  } else {
-    document.querySelectorAll('.news-card').forEach(function(card) {
-      card.classList.add('animate-in');
-    });
-  }
-})();
-</script>
+{% include recent-publications.html %}

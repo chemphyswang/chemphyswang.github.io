@@ -4,6 +4,7 @@ permalink: /hobbies/index.html
 title: Beyond Research
 ---
 
+{% comment %}
 <div class="hobbies-pinterest-container">
 
 <div class="hobby-section" markdown="1">
@@ -90,3 +91,4 @@ My musical heroes are legends who pioneered the genre: <span class="artist-name"
 </div>
 
 </div><!-- End hobbies-pinterest-container -->
+{% endcomment %}

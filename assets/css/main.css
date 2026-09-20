@@ -2761,10 +2761,10 @@ img.mfp-img {
 /* Logo dot on the timeline */
 .timeline-dot {
   position: absolute;
-  left: -58px;
+  left: -72px;
   top: 12px;
-  width: 46px;
-  height: 46px;
+  width: 74px;
+  height: 74px;
   border-radius: 50%;
   background: #343434;
   border: 3px solid #e0e0e0;
@@ -2783,11 +2783,16 @@ img.mfp-img {
 }
 
 .timeline-dot img {
-  max-width: 28px;
-  max-height: 28px;
+  max-width: 48px;
+  max-height: 48px;
   width: auto;
   height: auto;
   object-fit: contain;
+}
+
+.timeline-dot img.logo-lg {
+  max-width: 64px;
+  max-height: 64px;
 }
 
 /* Glow effect when in view */
@@ -2916,15 +2921,20 @@ img.mfp-img {
   }
 
   .timeline-dot {
-    left: -46px;
-    width: 34px;
-    height: 34px;
+    left: -56px;
+    width: 54px;
+    height: 54px;
     border-width: 2px;
   }
 
   .timeline-dot img {
-    max-width: 20px;
-    max-height: 20px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .timeline-dot img.logo-lg {
+    max-width: 41px;
+    max-height: 41px;
   }
 
   .timeline-item {
@@ -2960,15 +2970,20 @@ img.mfp-img {
   }
 
   .timeline-dot {
-    left: -50px;
-    width: 42px;
-    height: 42px;
+    left: -62px;
+    width: 66px;
+    height: 66px;
     font-size: 0.6em;
   }
 
   .timeline-dot img {
-    width: 26px;
-    height: 26px;
+    max-width: 38px;
+    max-height: 38px;
+  }
+
+  .timeline-dot img.logo-lg {
+    max-width: 50px;
+    max-height: 50px;
   }
 
   .timeline-card {
@@ -2989,15 +3004,20 @@ img.mfp-img {
   }
 
   .timeline-dot {
-    left: -70px;
-    width: 56px;
-    height: 56px;
+    left: -84px;
+    width: 84px;
+    height: 84px;
     font-size: 0.75em;
   }
 
   .timeline-dot img {
-    width: 36px;
-    height: 36px;
+    max-width: 46px;
+    max-height: 46px;
+  }
+
+  .timeline-dot img.logo-lg {
+    max-width: 61px;
+    max-height: 61px;
   }
 }
 
@@ -3023,17 +3043,30 @@ img.mfp-img {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  opacity: 0;
-  transform: translateY(20px);
+  /* Pure-CSS entrance animation: cards are visible even if JS is cached/missing */
+  animation: publication-card-in 0.5s ease both;
 }
+
+@keyframes publication-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger the 4 recent-publication cards */
+.publications-grid .publication-card:nth-child(1) { animation-delay: 0.05s; }
+.publications-grid .publication-card:nth-child(2) { animation-delay: 0.15s; }
+.publications-grid .publication-card:nth-child(3) { animation-delay: 0.25s; }
+.publications-grid .publication-card:nth-child(4) { animation-delay: 0.35s; }
 
 .publication-card.animate-in {
   opacity: 1;
   transform: translateY(0);
-  transition:
-    opacity 0.5s ease,
-    transform 0.5s ease,
-    box-shadow 0.3s ease;
 }
 
 .publication-card:hover {
@@ -4382,7 +4415,13 @@ body,
 }
 
 [data-theme="dark"] .publication-thumb {
-  background: linear-gradient(135deg, #1a2640 0%, #2a1a40 100%);
+  background: #ffffff;
+  padding: 14px;
+}
+
+[data-theme="dark"] .publication-thumb img {
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 [data-theme="dark"] .publication-title a {

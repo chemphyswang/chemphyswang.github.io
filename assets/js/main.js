@@ -1959,10 +1959,16 @@ $(function() {
     document.querySelectorAll('.news-card').forEach(card => {
       observer.observe(card);
     });
+
+    // Publication cards scroll animation
+    document.querySelectorAll('.publication-card').forEach(card => {
+      observer.observe(card);
+    });
   } else {
     // Fallback for browsers without IntersectionObserver support
     $('.hobby-section').addClass('animate-in');
     $('.news-card').addClass('animate-in');
+    $('.publication-card').addClass('animate-in');
   }
 });
 

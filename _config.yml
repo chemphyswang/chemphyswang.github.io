@@ -1,4 +1,4 @@
-title: Siming Deng
+title: Tao Wang
 # Comment out url when working locally to resolve base urls correctly
 url: https://larrysimingdeng.github.io
 
@@ -7,21 +7,23 @@ og_image: og-cover.jpg
 
 # Owner/author information
 owner:
-  name: Siming Deng
+  name: Tao Wang
   avatar: avatar.jpg
-  email: siming_deng_stat@163.com
-  github: LarrySimingDeng
-  linkedin: larry-deng-317b92360
-  scholar: https://scholar.google.com/citations?hl=en&user=aKyLtgsAAAAJ
-  researchgate: https://www.researchgate.net/profile/Siming-Deng-3
+  email: wt@bit.edu.cn
+  github: chemphyswang.github.io
+  orcid: https://orcid.org/0000-0003-4200-3712
+  scholar: https://scholar.google.com/citations?user=N6H95ssAAAAJ&hl=en
+  researchgate: https://www.researchgate.net/profile/Tao-Wang-242?ev=prf_overview
 
 # https://search.google.com/search-console/ownership
 google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 
 # Links to include in top navigation
 links:
-  - title: About Me
+  - title: Home
     url: /
+  - title: News
+    url: /news/
   - title: Publications
     url: /publications/
   - title: Beyond Research

@@ -10,3 +10,5 @@ gem "jekyll-feed"
 
 # Platform dependencies
 gem "webrick", "~> 1.7"
+gem "csv"
+gem "bigdecimal"
