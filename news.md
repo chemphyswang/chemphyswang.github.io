@@ -36,7 +36,7 @@ title: News
       <span class="news-date">May 2026</span>
       <span class="news-tag news-tag--publication">Publication</span>
     </div>
-    <p>Aoyuan's paper, <a href="https://doi.org/10.1002/anie.8043102"><strong>"Nature-Inspired Organic–Inorganic Hybridization Enables High-Temperature and Multicolor Organic Phosphorescence"</strong></a>, is out in <em>Angew. Chem. Int. Ed.</em></p>
+    <p>Aoyuan's paper, <a href="https://doi.org/10.1002/anie.8043102"><strong>"Nature-Inspired Organic–Inorganic Hybridization Enables High-Temperature and Multicolor Organic Phosphorescence"</strong></a>, is out in <em>Angew. Chem. Int. Ed.</em> (Selected as an <a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.2026-m2506061400">inside back cover</a>).</p>
   </div>
 
   <div class="news-card news-card--publication">
