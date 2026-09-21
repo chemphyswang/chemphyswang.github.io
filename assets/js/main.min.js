@@ -2016,13 +2016,19 @@ $(function() {
     $dd.addClass('open');
   };
 
-  // Stay open ~1s after the mouse leaves, so users can reach the menu;
+  // Close delay: short on desktop (mouse is precise), long on touch (the
+  // synthesized mouseleave right after a tap would otherwise close the menu
+  // within 40 ms, before the user can see or reach it)
+  var isTouch = window.matchMedia('(hover: none)').matches;
+  var CLOSE_DELAY = isTouch ? 1000 : 40;
+
+  // Stay open briefly after the pointer leaves, so users can reach the menu;
   // never close while the pointer is over the tab or the menu itself
   var queueClose = function() {
     clearTimeout(hoverTimer);
     hoverTimer = setTimeout(function() {
       $dd.removeClass('open');
-    }, 40);
+    }, CLOSE_DELAY);
   };
 
   $dd.on('mouseenter', openMenu);
