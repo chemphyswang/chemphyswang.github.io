@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "Tao Wang (王涛) group at Beijing Institute of Technology (北京理工大学): organic luminescent materials group (有机发光材料课题组), room-temperature phosphorescence (室温磷光), long afterglow materials (长余辉材料), TADF and optoelectronic applications. 王涛RTP，王涛北京理工大学材料学院。"
+description: "Tao Wang (王涛) group, Beijing Institute of Technology (北京理工大学材料学院): organic luminescent materials (有机发光材料), phosphorescence (RTP, 室温磷光), long afterglow materials (长余辉材料), TADF and optoelectronic applications."
 ---
 
 ## About Tao
