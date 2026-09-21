@@ -218,7 +218,7 @@ def render_item(p, num):
     figure = ''
     if p['doi'] in FIGURE_BY_DOI:
         fname, alt = FIGURE_BY_DOI[p['doi']]
-        cls = 'pub-figure pub-figure--sm' if fname == 'sci-china-chem-2026.png' else 'pub-figure'
+        cls = 'pub-figure'
         figure = f'\n      <div class="{cls}"><img src="/images/pubs-2026/{fname}" alt="{alt}"></div>'
     return f'''  <div class="pub-item">
     <span class="pub-num">{num}.</span>

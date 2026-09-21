@@ -2028,8 +2028,19 @@ $(function() {
   $dd.on('mouseenter', openMenu);
   $dd.on('mouseleave', queueClose);
 
-  // Touch devices: first tap opens the menu, second tap navigates
+  // Touch devices: first tap opens the menu, second tap navigates.
+  // Bind touchend (not click): browsers synthesize mouseenter/click after a
+  // tap, and the synthesized mouseenter used to open the menu before the
+  // click handler ran, so the "open on first tap" logic never engaged and
+  // the tap navigated straight to the page. preventDefault() on touchend
+  // also suppresses the synthesized mouse/click events for that tap.
   if (window.matchMedia('(hover: none)').matches) {
+    $dd.find('> a').on('touchend', function(e) {
+      if (!$dd.hasClass('open')) {
+        e.preventDefault();
+        $dd.addClass('open');
+      }
+    });
     $dd.find('> a').on('click', function(e) {
       if (!$dd.hasClass('open')) {
         e.preventDefault();
