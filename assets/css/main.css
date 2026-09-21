@@ -3224,21 +3224,27 @@ img.mfp-img {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Article figure shown under the matching publication entry (max-width 7cm) */
+/* Article figure shown under the matching publication entry (max-width 8cm; 7cm variant) */
 .pub-figure {
-  margin: 8px 0 2px;
+  margin: 8px auto 2px;
+  text-align: center;
 }
 
 .pub-figure img {
   display: block;
-  max-width: 7cm;
+  max-width: 8cm;
   width: auto;
   height: auto;
+  margin: 0 auto;
   padding: 4px;
   background: #ffffff;
   border: 1px solid #e2e2e2;
   border-radius: 6px;
   box-sizing: border-box;
+}
+
+.pub-figure--sm img {
+  max-width: 7cm;
 }
 
 [data-theme="dark"] .pub-figure img {
