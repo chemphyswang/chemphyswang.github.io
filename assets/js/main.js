@@ -2137,3 +2137,14 @@ $(function() {
     }
   });
 });
+
+// Open external links in article content in a new tab (About, News, etc.);
+// same-site links and hash anchors keep opening in the current tab.
+$(function() {
+  $('.article-wrap a[href^="http"]').each(function() {
+    if (this.hostname && this.hostname !== window.location.hostname) {
+      this.setAttribute('target', '_blank');
+      this.setAttribute('rel', 'noopener');
+    }
+  });
+});
