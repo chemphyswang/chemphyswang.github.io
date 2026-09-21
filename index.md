@@ -121,7 +121,8 @@ Tao Wang is currently an associate professor in the School of Materials Science 
 
 ## Teaching
 
-- Advanced Sensing Materials and Devices
+- Sensing Materials (100091232), Undergraduate Course
+- Advanced Sensing Materials and Devices (0900102), Graduate Course
 
 ## Postgraduate Supervision
 

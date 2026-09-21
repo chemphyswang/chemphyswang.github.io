@@ -2016,11 +2016,10 @@ $(function() {
     $dd.addClass('open');
   };
 
-  // Close delay: short on desktop (mouse is precise), long on touch (the
-  // synthesized mouseleave right after a tap would otherwise close the menu
-  // within 40 ms, before the user can see or reach it)
-  var isTouch = window.matchMedia('(hover: none)').matches;
-  var CLOSE_DELAY = isTouch ? 1000 : 40;
+  // Close delay: short for mouse (precise pointer), long once touch is used
+  // (a synthesized mouseleave right after a tap would otherwise close the
+  // menu almost immediately, before the user can see or reach it)
+  var CLOSE_DELAY = 40;
 
   // Stay open briefly after the pointer leaves, so users can reach the menu;
   // never close while the pointer is over the tab or the menu itself
@@ -2034,28 +2033,16 @@ $(function() {
   $dd.on('mouseenter', openMenu);
   $dd.on('mouseleave', queueClose);
 
-  // Touch devices: first tap opens the menu, second tap navigates.
-  // Bind touchstart (fires before any browser event synthesis): iOS Safari
-  // may turn the first tap into a synthetic mouseenter ("hover emulation")
-  // instead of a click, which races with touchend-based logic. preventDefault
-  // on touchstart suppresses all synthesized mouse/click events for that tap,
-  // so the menu always opens cleanly on the first touch.
-  if (window.matchMedia('(hover: none)').matches) {
-    $dd.find('> a').on('touchstart', function(e) {
-      if (!$dd.hasClass('open')) {
-        e.preventDefault();
-        clearTimeout(hoverTimer);
-        $dd.addClass('open');
-      }
-    });
-    $dd.find('> a').on('click', function(e) {
-      if (!$dd.hasClass('open')) {
-        e.preventDefault();
-        clearTimeout(hoverTimer);
-        $dd.addClass('open');
-      }
-    });
-
+  // Touch: bind unconditionally, NOT behind a (hover: none) media query —
+  // iOS Safari's hover emulation, desktop-mode requests and cached pages make
+  // media-query detection unreliable. touchstart fires before any browser
+  // event synthesis, and preventDefault on it suppresses all synthesized
+  // mouse/click events for that tap, so the menu always opens on first touch.
+  // (On non-touch devices touchstart simply never fires.)
+  var scrollCloseBound = false;
+  var bindScrollClose = function() {
+    if (scrollCloseBound) return;
+    scrollCloseBound = true;
     // Scrolling the page dismisses the menu immediately so it never blocks
     // content; scrolling inside the menu itself (overflow-y: auto) keeps it open
     $(document).on('touchmove', function(e) {
@@ -2068,7 +2055,25 @@ $(function() {
       clearTimeout(hoverTimer);
       $dd.removeClass('open');
     });
-  }
+  };
+
+  $dd.find('> a').on('touchstart', function(e) {
+    bindScrollClose();
+    CLOSE_DELAY = 1000;
+    if (!$dd.hasClass('open')) {
+      e.preventDefault();
+      clearTimeout(hoverTimer);
+      $dd.addClass('open');
+    }
+  });
+  $dd.find('> a').on('click', function(e) {
+    bindScrollClose();
+    if (!$dd.hasClass('open')) {
+      e.preventDefault();
+      clearTimeout(hoverTimer);
+      $dd.addClass('open');
+    }
+  });
 
   $(document).on('click', function(e) {
     if (!$(e.target).closest('.nav-dropdown').length) {
