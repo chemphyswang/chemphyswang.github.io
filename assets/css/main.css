@@ -3334,8 +3334,9 @@ img.mfp-img {
   left: 0;
   margin-top: 6px;
   display: none;
-  flex-direction: column;
-  min-width: 96px;
+  /* Two-column year grid: All spans the top row, years fill row-wise
+     (2026 | 2025 / 2024 | 2023 / ...) */
+  grid-template-columns: repeat(2, auto);
   max-height: calc(100vh - 160px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -3350,18 +3351,28 @@ img.mfp-img {
 /* visibility controlled by JS (.open) for the 1s close delay; keep focus-within for keyboard */
 .nav-dropdown:focus-within .nav-dropdown-menu,
 .nav-dropdown.open .nav-dropdown-menu {
-  display: flex;
+  display: grid;
 }
 
-/* "All" item at the top of the dropdown */
+/* "All" pairs with the newest year on the first grid row; it renders as
+   "All" (not ALL) even though header nav links are uppercased */
 .nav-dropdown-menu .nav-dropdown-all {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  margin-bottom: 4px;
-  padding-bottom: 9px;
+  text-transform: none;
 }
 
-[data-theme="dark"] .nav-dropdown-menu .nav-dropdown-all {
-  border-bottom-color: rgba(255, 255, 255, 0.1);
+/* Mobile fix: .header-nav uses overflow-x: auto, which also clips vertical
+   overflow (CSS spec) and would hide the dropdown entirely. Switching the
+   menu to position: fixed (top/left set by JS from the tab's viewport rect)
+   takes it out of the scroll container so it renders on top of the page. */
+@media (max-width: 768px) {
+  .nav-dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    max-height: calc(100vh - 130px);
+    z-index: 1300;
+  }
 }
 
 .nav-dropdown-menu a {

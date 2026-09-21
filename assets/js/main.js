@@ -2010,10 +2010,28 @@ $(function() {
   var $dd = $('.nav-dropdown');
   if (!$dd.length) return;
   var hoverTimer = null;
+  var $menu = $dd.find('.nav-dropdown-menu');
+  var $tab = $dd.find('> a');
+
+  // On mobile the menu is position: fixed (see main.css) because the nav's
+  // overflow-x: auto clips absolute dropdowns; anchor it under the tab using
+  // viewport coordinates, clamped so it never runs off the right/left edge.
+  var positionMobileMenu = function() {
+    if (window.innerWidth > 768) {
+      $menu.css({ top: '', left: '' });
+      return;
+    }
+    var rect = $tab[0].getBoundingClientRect();
+    var menuW = $menu[0].offsetWidth;
+    var left = Math.min(rect.left, window.innerWidth - menuW - 8);
+    if (left < 8) left = 8;
+    $menu.css({ top: (rect.bottom + 6) + 'px', left: left + 'px' });
+  };
 
   var openMenu = function() {
     clearTimeout(hoverTimer);
     $dd.addClass('open');
+    positionMobileMenu();
   };
 
   // Close delay: short for mouse (precise pointer), long once touch is used
@@ -2064,6 +2082,7 @@ $(function() {
       e.preventDefault();
       clearTimeout(hoverTimer);
       $dd.addClass('open');
+      positionMobileMenu();
     }
   });
   $dd.find('> a').on('click', function(e) {
@@ -2072,7 +2091,14 @@ $(function() {
       e.preventDefault();
       clearTimeout(hoverTimer);
       $dd.addClass('open');
+      positionMobileMenu();
     }
+  });
+
+  // If the viewport crosses the mobile breakpoint while the menu is open,
+  // drop stale fixed coordinates (or close it outright on rotate)
+  $(window).on('resize', function() {
+    if ($dd.hasClass('open')) positionMobileMenu();
   });
 
   $(document).on('click', function(e) {
