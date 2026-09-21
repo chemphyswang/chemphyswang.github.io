@@ -235,6 +235,10 @@ STYLE = '''<style>
 .pub-num{flex:0 0 34px;font-weight:700;color:#8a0000;font-size:1.05em;text-align:right;line-height:1.5}
 .pub-text{flex:1}
 .pub-title{font-weight:600;line-height:1.45;margin-bottom:3px}
+.pub-title a{color:#011f5b;border-bottom:1px solid rgba(1,31,91,.4);text-decoration:none}
+.pub-title a:hover{color:#990000;border-bottom-color:rgba(153,0,0,.55)}
+[data-theme="dark"] .pub-title a{color:#6ea8ff;border-bottom-color:rgba(110,168,255,.4)}
+[data-theme="dark"] .pub-title a:hover{color:#e5484d;border-bottom-color:rgba(229,72,77,.55)}
 .pub-authors{line-height:1.5;margin-bottom:3px;font-size:0.9em}
 .pub-venue{line-height:1.5}
 @media (max-width:480px){.pub-num{flex:0 0 26px;font-size:0.95em}}
