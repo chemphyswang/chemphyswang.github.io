@@ -2022,7 +2022,7 @@ $(function() {
     clearTimeout(hoverTimer);
     hoverTimer = setTimeout(function() {
       $dd.removeClass('open');
-    }, 1000);
+    }, 40);
   };
 
   $dd.on('mouseenter', openMenu);
