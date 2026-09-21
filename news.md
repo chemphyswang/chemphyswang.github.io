@@ -4,7 +4,7 @@ permalink: /news/index.html
 title: News
 ---
 
-## News
+## News and Updates
 
 <div class="news-grid">
   <div class="news-card news-card--milestone">
