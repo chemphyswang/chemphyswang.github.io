@@ -49,23 +49,17 @@ title: News
 </div>
 
 <script>
+// Entry animation for the cards visible in the initial viewport only.
+// Cards below the fold are always fully visible (no scroll-gated reveal),
+// so mobile visitors never mistake the page for having only a few items.
 (function() {
-  if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
-          observer.unobserve(entry);
-        }
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
-    document.querySelectorAll('.news-card').forEach(function(card) {
-      observer.observe(card);
-    });
-  } else {
-    document.querySelectorAll('.news-card').forEach(function(card) {
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.news-card').forEach(function(card) {
+    if (prefersReduced) return;
+    var rect = card.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
       card.classList.add('animate-in');
-    });
-  }
+    }
+  });
 })();
 </script>
