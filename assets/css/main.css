@@ -3259,6 +3259,23 @@ img.mfp-img {
   text-indent: 0;
   margin: 0.4em 0;
 }
+.contact-link {
+  color: #011f5b;
+  border-bottom: 1px solid rgba(1, 31, 91, 0.45);
+  text-decoration: none;
+}
+.contact-link:hover {
+  color: #990000;
+  border-bottom-color: #990000;
+}
+[data-theme="dark"] .contact-link {
+  color: #6ea8ff;
+  border-bottom-color: rgba(110, 168, 255, 0.45);
+}
+[data-theme="dark"] .contact-link:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
 .contact-icon {
   display: inline-flex;
   align-items: center;
