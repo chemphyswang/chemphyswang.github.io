@@ -3228,7 +3228,7 @@ img.mfp-img {
 .pub-year-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 24px;
+  gap: 10px 44px;
   margin: 0 0 0.5em;
   padding-bottom: 0.8em;
 }
