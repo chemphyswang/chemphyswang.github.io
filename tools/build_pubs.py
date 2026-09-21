@@ -5,7 +5,7 @@ from pathlib import Path
 TOOLS = Path(__file__).resolve().parent
 REPO = TOOLS.parent
 
-SMALL = {'a','an','the','and','but','or','nor','for','so','yet','as','at','by','in','of','on','to','up','via','per','vs','v','p'}
+SMALL = {'a','an','the','and','but','or','nor','for','so','yet','as','at','by','in','of','on','to','up','via','per','vs','v','p','with','without'}
 
 def cap_word(w):
     if not w: return w
@@ -39,7 +39,7 @@ def titlecase(title):
         if not tok:
             out.append(('', False)); continue
         core = re.sub(r'^[^\w]+|[^\w]+$', '', tok)
-        is_small = core.lower() in SMALL and len(core) <= 3
+        is_small = core.lower() in SMALL and (len(core) <= 3 or core.lower() in ('with', 'without'))
         parts = re.split(r'([\-\‐\‑\–\—])', tok)
         new_tok = ''.join(p if re.fullmatch(r'[-\‐\‑\–\—]', p or '-') else cap_word(p) for p in parts)
         out.append((new_tok, is_small))
