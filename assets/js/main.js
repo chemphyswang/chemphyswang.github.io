@@ -1983,3 +1983,24 @@ $(function() {
     }
   );
 });
+// Back-to-top button
+$(function() {
+  var $btn = $('#backToTop');
+  if (!$btn.length) return;
+
+  var toggleBtn = function() {
+    if ($(window).scrollTop() > 300) {
+      $btn.addClass('visible');
+    } else {
+      $btn.removeClass('visible');
+    }
+  };
+
+  $(window).on('scroll', toggleBtn);
+  toggleBtn();
+
+  $btn.on('click', function() {
+    $('html, body').animate({ scrollTop: 0 }, 400);
+    return false;
+  });
+});

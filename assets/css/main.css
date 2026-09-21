@@ -3224,9 +3224,55 @@ img.mfp-img {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Publications page: year navigation row (replaces the page title) */
-.pub-year-nav {
+/* Back to top button (fixed bottom-right on all pages) */
+#backToTop {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9000;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #011f5b;
+  color: #ffffff;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s,
+    background 0.2s ease;
+}
+
+#backToTop.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#backToTop:hover {
+  background: #990000;
+}
+
+@media (max-width: 480px) {
+  #backToTop {
+    right: 16px;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Publications page: year navigation row (replaces the page title) */
+.pub-year-nav {  display: flex;
   flex-wrap: wrap;
   gap: 10px 44px;
   margin: 0 0 0.5em;
