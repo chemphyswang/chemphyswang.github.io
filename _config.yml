@@ -1,6 +1,10 @@
-title: Tao Wang
+title: "Tao Wang (王涛) | Organic Luminescent Materials Group, BIT"
 # Comment out url when working locally to resolve base urls correctly
 url: https://chemphyswang.github.io
+
+# Plugins (whitelist-supported by GitHub Pages)
+plugins:
+  - jekyll-sitemap
 
 # Default social-share preview image (Open Graph / Twitter card). Lives in /images/.
 og_image: og-cover.jpg
