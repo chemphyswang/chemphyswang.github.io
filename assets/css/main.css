@@ -3348,9 +3348,12 @@ img.mfp-img {
   z-index: 1200;
 }
 
-/* visibility controlled by JS (.open) for the 1s close delay; keep focus-within for keyboard */
+/* visibility controlled by JS (.open) for the 1s close delay; keep focus-within
+   for keyboard. The standalone .nav-dropdown-menu.open covers the mobile case
+   where the menu is detached to <body> (iOS compositing workaround). */
 .nav-dropdown:focus-within .nav-dropdown-menu,
-.nav-dropdown.open .nav-dropdown-menu {
+.nav-dropdown.open .nav-dropdown-menu,
+.nav-dropdown-menu.open {
   display: grid;
 }
 

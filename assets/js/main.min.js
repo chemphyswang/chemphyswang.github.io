@@ -2013,14 +2013,43 @@ $(function() {
   var $menu = $dd.find('.nav-dropdown-menu');
   var $tab = $dd.find('> a');
 
+  // iOS Safari compositing workaround: a position:fixed menu kept inside the
+  // header (backdrop-filter + SVG displacement filter layers + a momentum
+  // scroll nav with -webkit-overflow-scrolling) can paint fully transparent
+  // on real devices while still hit-testing — the menu "works" but is
+  // invisible. Moving the menu to <body> (the same pattern the working
+  // mobile contact panel uses) takes it out of that layer tree.
+  var menuDetached = false;
+  var detachMenu = function() {
+    if (menuDetached) return;
+    menuDetached = true;
+    document.body.appendChild($menu[0]);
+  };
+  var attachMenu = function() {
+    if (!menuDetached) return;
+    menuDetached = false;
+    $dd.append($menu);
+  };
+
+  var openDD = function() {
+    $dd.addClass('open');
+    $menu.addClass('open');
+  };
+  var closeDD = function() {
+    $dd.removeClass('open');
+    $menu.removeClass('open');
+  };
+
   // On mobile the menu is position: fixed (see main.css) because the nav's
   // overflow-x: auto clips absolute dropdowns; anchor it under the tab using
   // viewport coordinates, clamped so it never runs off the right/left edge.
   var positionMobileMenu = function() {
     if (window.innerWidth > 768) {
+      attachMenu();
       $menu.css({ top: '', left: '' });
       return;
     }
+    detachMenu();
     var rect = $tab[0].getBoundingClientRect();
     var menuW = $menu[0].offsetWidth;
     var left = Math.min(rect.left, window.innerWidth - menuW - 8);
@@ -2030,7 +2059,7 @@ $(function() {
 
   var openMenu = function() {
     clearTimeout(hoverTimer);
-    $dd.addClass('open');
+    openDD();
     positionMobileMenu();
   };
 
@@ -2044,7 +2073,7 @@ $(function() {
   var queueClose = function() {
     clearTimeout(hoverTimer);
     hoverTimer = setTimeout(function() {
-      $dd.removeClass('open');
+      closeDD();
     }, CLOSE_DELAY);
   };
 
@@ -2066,12 +2095,12 @@ $(function() {
     $(document).on('touchmove', function(e) {
       if (!$(e.target).closest('.nav-dropdown-menu').length) {
         clearTimeout(hoverTimer);
-        $dd.removeClass('open');
+        closeDD();
       }
     });
     $(window).on('scroll', function() {
       clearTimeout(hoverTimer);
-      $dd.removeClass('open');
+      closeDD();
     });
   };
 
@@ -2081,7 +2110,7 @@ $(function() {
     if (!$dd.hasClass('open')) {
       e.preventDefault();
       clearTimeout(hoverTimer);
-      $dd.addClass('open');
+      openDD();
       positionMobileMenu();
     }
   });
@@ -2090,7 +2119,7 @@ $(function() {
     if (!$dd.hasClass('open')) {
       e.preventDefault();
       clearTimeout(hoverTimer);
-      $dd.addClass('open');
+      openDD();
       positionMobileMenu();
     }
   });
@@ -2104,7 +2133,7 @@ $(function() {
   $(document).on('click', function(e) {
     if (!$(e.target).closest('.nav-dropdown').length) {
       clearTimeout(hoverTimer);
-      $dd.removeClass('open');
+      closeDD();
     }
   });
 });
