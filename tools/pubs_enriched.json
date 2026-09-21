@@ -1,0 +1,1388 @@
+{
+ "pubs": [
+  {
+   "doi": "10.1007/s11426-025-3385-5",
+   "title": "Organic room-temperature phosphorescence materials",
+   "authors": [
+    "Dan Liu",
+    "Zhengxu Cai",
+    "Yuping Dong",
+    "Jingyu Zhang",
+    "Runfeng Chen",
+    "Yi Chen",
+    "Zhenzhen Xu",
+    "Hongbing Fu",
+    "Zikai He",
+    "Jie Yang",
+    "Zhen Li",
+    "Xiang Ma",
+    "Qi Sun",
+    "Zhigang Shuai",
+    "Zijian Chen",
+    "Mengke Li",
+    "Shi-Jian Su",
+    "Przemyslaw Data",
+    "Youhei Takeda",
+    "Jusaina Eyyathiyil",
+    "Pakkirisamy Thilagar",
+    "He-Lou Xie",
+    "Yu Xiong",
+    "Zhenhong Qi",
+    "Dongpeng Yan",
+    "Haichao Liu",
+    "Bing Yang",
+    "Zhonghao Wang",
+    "Chaolong Yang",
+    "Xing-Huo Wang",
+    "Ying-Wei Yang",
+    "Xiang Chen",
+    "Guangxin Yang",
+    "Wang Zhang Yuan",
+    "Shengnan Zou",
+    "Yong Zhang",
+    "Aoyuan Cheng",
+    "Guoqing Zhang",
+    "Kaka Zhang",
+    "Pengfei She",
+    "Qiang Zhao",
+    "Jingjing Guo",
+    "Yanli Zhao",
+    "Hao Sun",
+    "Liangliang Zhu",
+    "Tao Wang",
+    "Eli Zysman-Colman",
+    "Parvej Alam",
+    "Zheng Zhao",
+    "Ben Zhong Tang",
+    "Anjun Qin"
+   ],
+   "journal": "Science China Chemistry",
+   "volume": "69",
+   "page": "3929-4150",
+   "year": 2026,
+   "date": [
+    2026,
+    7,
+    6
+   ]
+  },
+  {
+   "doi": "10.1093/nsr/nwag394",
+   "title": "Molecular orbital node engineering in pyrene: linking chemical reactivity with room-temperature phosphorescence",
+   "authors": [
+    "Hongping Liu",
+    "Dingcheng Zhou",
+    "Wei Zhang",
+    "Xiaolong Zhang",
+    "Chengze Yang",
+    "Baicheng Zhang",
+    "Aoyuan Cheng",
+    "Hao Su",
+    "Yang Zhang",
+    "Meng Zhou",
+    "Xuepeng Zhang",
+    "Tao Wang",
+    "Guoqing Zhang"
+   ],
+   "journal": "National Science Review",
+   "volume": "13",
+   "page": "nwag394",
+   "year": 2026,
+   "date": [
+    2026,
+    6,
+    26
+   ]
+  },
+  {
+   "doi": "10.31635/ccschem.025.202506170",
+   "title": "Dynamic Organic Radical Complex Emission from a Room-Temperature Phosphorescent Host–Guest System",
+   "authors": [
+    "Gengchen Li",
+    "Wenbo Dai",
+    "Yijia Wang",
+    "Yuan Zheng",
+    "Yongfeng Zhang",
+    "Yeyun Zhao",
+    "Xin Cheng",
+    "Ruiyang Wan",
+    "Yanhong Liu",
+    "Jikun Li",
+    "Li Wang",
+    "Yunxiang Lei",
+    "Bin Tong",
+    "Peng Sun",
+    "Tao Wang",
+    "Zhengxu Cai",
+    "Yuping Dong"
+   ],
+   "journal": "CCS Chemistry",
+   "volume": "8",
+   "page": "2822-2831",
+   "year": 2026,
+   "date": [
+    2026,
+    6,
+    1
+   ]
+  },
+  {
+   "doi": "10.1002/anie.8043102",
+   "title": "Nature‐Inspired Organic–Inorganic Hybridization Enables High‐Temperature and Multicolor Organic Phosphorescence",
+   "authors": [
+    "Aoyuan Cheng",
+    "Chengze Yang",
+    "Hongping Liu",
+    "Shikai Yu",
+    "Xinrui Li",
+    "Zheng Gong",
+    "Baicheng Zhang",
+    "Hailin Qiu",
+    "Kan Hu",
+    "Tao Wang",
+    "Guoqing Zhang"
+   ],
+   "journal": "Angewandte Chemie International Edition",
+   "volume": "65",
+   "page": "e8043102",
+   "year": 2026,
+   "date": [
+    2026,
+    5,
+    26
+   ]
+  },
+  {
+   "doi": "10.1021/acsnano.6c00162",
+   "title": "Ultra-Linear Afterglow Oxygen Sensing and Visualization in Morphology-Engineered Phosphorescent Microporous Copolymers",
+   "authors": [
+    "Hao Su",
+    "Wenhuan Huang",
+    "Biao Chen",
+    "Tao Wang",
+    "Xuepeng Zhang",
+    "Guoqing Zhang"
+   ],
+   "journal": "ACS Nano",
+   "volume": "20",
+   "page": "12440-12449",
+   "year": 2026,
+   "date": [
+    2026,
+    4,
+    13
+   ]
+  },
+  {
+   "doi": "10.1002/ADMA.202521092",
+   "title": "Semi‐Artificial Photosynthetic Machinery for Carbon Dioxide Capture and Conversion",
+   "authors": [
+    "Shuting Huang",
+    "Qiuyuan Ren",
+    "Tianxing Zhang",
+    "Qingfeng Xu",
+    "Najun Li",
+    "Hua Li",
+    "Tao Wang",
+    "Dongyun Chen",
+    "Jianmei Lu"
+   ],
+   "journal": "Advanced Materials",
+   "volume": "38",
+   "page": "e21092",
+   "year": 2025,
+   "date": [
+    2025,
+    12,
+    19
+   ]
+  },
+  {
+   "doi": "10.1038/s41467-025-66035-w",
+   "title": "Nonconventional near-infrared room-temperature phosphorescent materials based on spiropolymer alloy",
+   "authors": [
+    "Yue Ren",
+    "Yongfeng Zhang",
+    "Han Su",
+    "Yeyun Zhao",
+    "Wenya Yan",
+    "Wenbo Dai",
+    "Luojie Zhu",
+    "Tao Wang",
+    "Jianbing Shi",
+    "Junge Zhi",
+    "Bin Tong",
+    "Peng Sun",
+    "Zhengxu Cai",
+    "Yuping Dong"
+   ],
+   "journal": "Nature Communications",
+   "volume": "16",
+   "page": "11120",
+   "year": 2025,
+   "date": [
+    2025,
+    11,
+    26
+   ]
+  },
+  {
+   "doi": "10.1002/agt2.70172",
+   "title": "Achieving Chiral Recognition of Imide‐Based Fluorophores Through Förster Resonance Energy Transfer",
+   "authors": [
+    "Jing Chen",
+    "Biao Chen",
+    "Shikai Yu",
+    "Dongqing Lin",
+    "Guoqing Zhang",
+    "Tao Wang"
+   ],
+   "journal": "Aggregate",
+   "volume": "6",
+   "page": "e70172",
+   "year": 2025,
+   "date": [
+    2025,
+    9,
+    26
+   ]
+  },
+  {
+   "doi": "10.1016/J.CCR.2025.216629",
+   "title": "Clusterization-triggered room-temperature phosphorescent synthetic polymeric materials",
+   "authors": [
+    "Wenya Yan",
+    "Peixuan Dong",
+    "Qiyu Zhang",
+    "Yongfeng Zhang",
+    "Ruhui Deng",
+    "Luojie Zhu",
+    "Tao Wang",
+    "Jianbing Shi",
+    "Junge Zhi",
+    "Bin Tong",
+    "Peng Sun",
+    "Zhengxu Cai",
+    "Yuping Dong"
+   ],
+   "journal": "Coordination Chemistry Reviews",
+   "volume": "535",
+   "page": "216629",
+   "year": 2025,
+   "date": [
+    2025,
+    7
+   ]
+  },
+  {
+   "doi": "10.31635/ccschem.024.202404450",
+   "title": "Unlocking Multi-photoresponse in Phenothiazine Derivatives Through Photoinduced Radical and Keto-Enol Tautomerism",
+   "authors": [
+    "Duo Xu",
+    "Tao Wang",
+    "Shitai Liu",
+    "Guiqiang Pu",
+    "Jie Yang",
+    "Manman Fang",
+    "Xiaogang Liu",
+    "Zhen Li"
+   ],
+   "journal": "CCS Chemistry",
+   "volume": "7",
+   "page": "637-647",
+   "year": 2025,
+   "date": [
+    2025,
+    3
+   ]
+  },
+  {
+   "doi": "10.1039/D5CC04148A",
+   "title": "Achieving wide-range color-tunable afterglows through co-doping and energy transfer in organic host–guest system",
+   "authors": [
+    "Jianhui Yang",
+    "Lutong Zhang",
+    "Jielei Jin",
+    "Ziting Li",
+    "Wenbo Dai",
+    "Peng Sun",
+    "Tao Wang",
+    "Baicheng Mei",
+    "Zhengxu Cai"
+   ],
+   "journal": "Chemical Communications",
+   "volume": "61",
+   "page": "18376-18379",
+   "year": 2025,
+   "date": [
+    2025
+   ]
+  },
+  {
+   "doi": "10.1039/D5QM00602C",
+   "title": "Flexible room-temperature-phosphorescence materials based on polymers with low glass-transition temperatures",
+   "authors": [
+    "Bolun Huang",
+    "Yongfeng Zhang",
+    "Tao Wang",
+    "Baicheng Mei",
+    "Peng Sun",
+    "Jianbing Shi",
+    "Bin Tong",
+    "Zitong Liu",
+    "Zhengxu Cai",
+    "Yuping Dong"
+   ],
+   "journal": "Materials Chemistry Frontiers",
+   "volume": "9",
+   "page": "3495-3504",
+   "year": 2025,
+   "date": [
+    2025
+   ]
+  },
+  {
+   "doi": "10.1007/978-981-97-1574-9_168-1",
+   "title": "Organic Room-Temperature Phosphorescent Emitters for Organic Light-Emitting Diodes",
+   "authors": [
+    "Tao Wang"
+   ],
+   "journal": "Encyclopedia of Aggregation-Induced Emission",
+   "volume": null,
+   "page": "1-19",
+   "year": 2025,
+   "date": [
+    2025
+   ]
+  },
+  {
+   "doi": "10.1021/ACS.CHEMREV.3C00755",
+   "title": "The Golden Age of Thermally Activated Delayed Fluorescence Materials: Design and Exploitation",
+   "authors": [
+    "John Marques Dos Santos",
+    "David Hall",
+    "Biju Basumatary",
+    "Megan Bryden",
+    "Dongyang Chen",
+    "Praveen Choudhary",
+    "Thomas Comerford",
+    "Ettore Crovini",
+    "Andrew Danos",
+    "Joydip De",
+    "Stefan Diesing",
+    "Mahni Fatahi",
+    "Máire Griffin",
+    "Abhishek Kumar Gupta",
+    "Hassan Hafeez",
+    "Lea Hämmerling",
+    "Emily Hanover",
+    "Janine Haug",
+    "Tabea Heil",
+    "Durai Karthik",
+    "Shiv Kumar",
+    "Oliver Lee",
+    "Haoyang Li",
+    "Fabien Lucas",
+    "Campbell Frank Ross Mackenzie",
+    "Aminata Mariko",
+    "Tomas Matulaitis",
+    "Francis Millward",
+    "Yoann Olivier",
+    "Quan Qi",
+    "Ifor D. W. Samuel",
+    "Nidhi Sharma",
+    "Changfeng Si",
+    "Leander Spierling",
+    "Pagidi Sudhakar",
+    "Dianming Sun",
+    "Eglė Tankelevičiu̅tė",
+    "Michele Duarte Tonet",
+    "Jingxiang Wang",
+    "Tao Wang",
+    "Sen Wu",
+    "Yan Xu",
+    "Le Zhang",
+    "Eli Zysman-Colman"
+   ],
+   "journal": "Chemical Reviews",
+   "volume": "124",
+   "page": "13736-14110",
+   "year": 2024,
+   "date": [
+    2024,
+    12,
+    12
+   ]
+  },
+  {
+   "doi": "10.1002/CPTC.202400315",
+   "title": "Recent Progress of Organic Room‐Temperature Phosphorescent Hydrogels",
+   "authors": [
+    "Xiaoyuan Huang",
+    "Yongfeng Zhang",
+    "Gengchen Li",
+    "Tao Wang",
+    "Peng Sun",
+    "Jianbing Shi",
+    "Bin Tong",
+    "Junge Zhi",
+    "Zhao Li",
+    "Zhengxu Cai",
+    "Yuping Dong"
+   ],
+   "journal": "ChemPhotoChem",
+   "volume": "9",
+   "page": "e202400315",
+   "year": 2024,
+   "date": [
+    2024,
+    11,
+    20
+   ]
+  },
+  {
+   "doi": "10.31635/ccschem.024.202404623",
+   "title": "Hydrogen-Bonded Supramolecular Network Triggers High-Efficiency Blue Room-Temperature Phosphorescence",
+   "authors": [
+    "Sen Wu",
+    "Tao Wang",
+    "Eli Zysman-Colman"
+   ],
+   "journal": "CCS Chemistry",
+   "volume": "6",
+   "page": "2727-2740",
+   "year": 2024,
+   "date": [
+    2024,
+    11
+   ]
+  },
+  {
+   "doi": "10.1038/s41467-024-51231-x",
+   "title": "A temperature sensor with a wide spectral range based on a dual-emissive TADF dendrimer system",
+   "authors": [
+    "Changfeng Si",
+    "Tao Wang",
+    "Yan Xu",
+    "Dongqing Lin",
+    "Dianming Sun",
+    "Eli Zysman-Colman"
+   ],
+   "journal": "Nature Communications",
+   "volume": "15",
+   "page": "7439",
+   "year": 2024,
+   "date": [
+    2024,
+    8,
+    28
+   ]
+  },
+  {
+   "doi": "10.1002/ANIE.202401949",
+   "title": "Overcoming Thermal Quenching in X‐ray Scintillators through Multi‐Excited State Switching",
+   "authors": [
+    "Min Wang",
+    "Zhongbo Zhang",
+    "Jing Lyu",
+    "Jian Qiu",
+    "Chang Gu",
+    "He Zhao",
+    "Tao Wang",
+    "Yiwen Ren",
+    "Shuo‐Wang Yang",
+    "Guo Qin Xu",
+    "Xiaogang Liu"
+   ],
+   "journal": "Angewandte Chemie International Edition",
+   "volume": "63",
+   "page": "e202401949",
+   "year": 2024,
+   "date": [
+    2024,
+    3,
+    21
+   ]
+  },
+  {
+   "doi": "10.1021/JACS.4C01929",
+   "title": "Mitochondria-Targeting Type-I Photodrug: Harnessing Caspase-3 Activity for Pyroptotic Oncotherapy",
+   "authors": [
+    "Zhigao Yi",
+    "Xujuan Qin",
+    "Li Zhang",
+    "Huan Chen",
+    "Tianlin Song",
+    "Zichao Luo",
+    "Tao Wang",
+    "Junwei Lau",
+    "Yelin Wu",
+    "Tan Boon Toh",
+    "Chun-Sing Lee",
+    "Wenbo Bu",
+    "Xiaogang Liu"
+   ],
+   "journal": "Journal of the American Chemical Society",
+   "volume": "146",
+   "page": "9413-9421",
+   "year": 2024,
+   "date": [
+    2024,
+    3,
+    20
+   ]
+  },
+  {
+   "doi": "10.1002/anie.202309718",
+   "title": "Room‐Temperature Multiple Phosphorescence from Functionalized Corannulenes: Temperature Sensing and Afterglow Organic Light‐Emitting Diode**",
+   "authors": [
+    "Changfeng Si",
+    "Tao Wang",
+    "Abhishek Kumar Gupta",
+    "David B. Cordes",
+    "Alexandra M. Z. Slawin",
+    "Jay S. Siegel",
+    "Eli Zysman‐Colman"
+   ],
+   "journal": "Angewandte Chemie International Edition",
+   "volume": "62",
+   "page": "e202309718",
+   "year": 2023,
+   "date": [
+    2023,
+    9,
+    15
+   ]
+  },
+  {
+   "doi": "10.1063/1674-0068/cjcp2105086",
+   "title": "Design strategy of polymer matrix to regulate room temperature phosphorescence efficiency",
+   "authors": [
+    "Bin Pei",
+    "Tao Wang",
+    "Xue-peng Zhang",
+    "Guo-qing Zhang"
+   ],
+   "journal": "Chinese Journal of Chemical Physics",
+   "volume": "36",
+   "page": "153",
+   "year": 2023,
+   "date": [
+    2023,
+    4,
+    1
+   ]
+  },
+  {
+   "doi": "10.1002/ADOM.202300114",
+   "title": "Reducing Efficiency Roll‐Off in Multi‐Resonant Thermally Activated Delayed Fluorescent OLEDs through Modulation of the Energy of the T\n                    <sub>2</sub>\n                    State",
+   "authors": [
+    "Tao Wang",
+    "Abhishek Kumar Gupta",
+    "David B. Cordes",
+    "Alexandra M. Z. Slawin",
+    "Eli Zysman‐Colman"
+   ],
+   "journal": "Advanced Optical Materials",
+   "volume": "11",
+   "page": "2300114",
+   "year": 2023,
+   "date": [
+    2023,
+    3,
+    20
+   ]
+  },
+  {
+   "doi": "10.1002/anie.202218712",
+   "title": "Functional Roles of Polymers in Room‐Temperature Phosphorescent Materials: Modulation of Intersystem Crossing, Air Sensitivity and Biological Activity",
+   "authors": [
+    "Hao Su",
+    "Kan Hu",
+    "Wenhuan Huang",
+    "Tao Wang",
+    "Xiaolong Zhang",
+    "Biao Chen",
+    "Hui Miao",
+    "Xuepeng Zhang",
+    "Guoqing Zhang"
+   ],
+   "journal": "Angewandte Chemie International Edition",
+   "volume": "62",
+   "page": "e202218712",
+   "year": 2023,
+   "date": [
+    2023,
+    2,
+    14
+   ]
+  },
+  {
+   "doi": "10.1016/J.XCRP.2022.101245",
+   "title": "The El-Sayed’s rule analogy enables long-lived room temperature phosphorescence in twisted biphenyls",
+   "authors": [
+    "Bingze Wu",
+    "Hao Su",
+    "Aoyuan Cheng",
+    "Xuepeng Zhang",
+    "Tao Wang",
+    "Guoqing Zhang"
+   ],
+   "journal": "Cell Reports Physical Science",
+   "volume": "4",
+   "page": "101245",
+   "year": 2023,
+   "date": [
+    2023,
+    2
+   ]
+  },
+  {
+   "doi": "10.1021/jacs.2c12320",
+   "title": "Conjugation-Modulated Excitonic Coupling Brightens Multiple Triplet Excited States",
+   "authors": [
+    "Tao Wang",
+    "Abhishek Kumar Gupta",
+    "Sen Wu",
+    "Alexandra M. Z. Slawin",
+    "Eli Zysman-Colman"
+   ],
+   "journal": "Journal of the American Chemical Society",
+   "volume": "145",
+   "page": "1945-1954",
+   "year": 2023,
+   "date": [
+    2023,
+    1,
+    13
+   ]
+  },
+  {
+   "doi": "10.1002/adpr.202200203",
+   "title": "1,3,5‐Triazine‐Functionalized Thermally Activated Delayed Fluorescence Emitters for Organic Light‐Emitting Diodes",
+   "authors": [
+    "Dianming Sun",
+    "Changfeng Si",
+    "Tao Wang",
+    "Eli Zysman-Colman"
+   ],
+   "journal": "Advanced Photonics Research",
+   "volume": "3",
+   "page": "2200203",
+   "year": 2022,
+   "date": [
+    2022,
+    9,
+    27
+   ]
+  },
+  {
+   "doi": "10.1002/anie.202206681",
+   "title": "Thermally Activated and Aggregation‐Regulated Excitonic Coupling Enable Emissive High‐Lying Triplet Excitons**",
+   "authors": [
+    "Tao Wang",
+    "Joydip De",
+    "Sen Wu",
+    "Abhishek Kumar Gupta",
+    "Eli Zysman‐Colman"
+   ],
+   "journal": "Angewandte Chemie International Edition",
+   "volume": "61",
+   "page": "e202206681",
+   "year": 2022,
+   "date": [
+    2022,
+    7,
+    4
+   ]
+  },
+  {
+   "doi": "10.1002/anie.202206366",
+   "title": "Origin of Red‐Shifted Phosphorescence from Triphenylamines: Triplet Excimer or Impurity?",
+   "authors": [
+    "Aoyuan Cheng",
+    "Yifan Jiang",
+    "Hao Su",
+    "Baicheng Zhang",
+    "Jun Jiang",
+    "Tao Wang",
+    "Yi Luo",
+    "Guoqing Zhang"
+   ],
+   "journal": "Angewandte Chemie International Edition",
+   "volume": "61",
+   "page": "e202206366",
+   "year": 2022,
+   "date": [
+    2022,
+    6,
+    28
+   ]
+  },
+  {
+   "doi": "10.1002/adom.202200099",
+   "title": "Broad‐Band Visible‐Light Excitable Room‐Temperature Phosphorescence Via Polymer Site‐Isolated Dye Aggregates",
+   "authors": [
+    "Xiancheng Nie",
+    "Jiajun Du",
+    "Wenhuan Huang",
+    "Tao Wang",
+    "Xiao Wang",
+    "Biao Chen",
+    "Xuepeng Zhang",
+    "Guoqing Zhang"
+   ],
+   "journal": "Advanced Optical Materials",
+   "volume": "10",
+   "page": "2200099",
+   "year": 2022,
+   "date": [
+    2022,
+    4,
+    5
+   ]
+  },
+  {
+   "doi": "10.1002/agt2.165",
+   "title": "Kinetic and thermodynamic control of tetraphenylethene aggregation‐induced emission behaviors",
+   "authors": [
+    "Xiancheng Nie",
+    "Wenhuan Huang",
+    "Dingcheng Zhou",
+    "Tao Wang",
+    "Xiao Wang",
+    "Biao Chen",
+    "Xuepeng Zhang",
+    "Guoqing Zhang"
+   ],
+   "journal": "Aggregate",
+   "volume": "3",
+   "page": "e165",
+   "year": 2022,
+   "date": [
+    2022,
+    1,
+    17
+   ]
+  },
+  {
+   "doi": "10.7536/PC211037",
+   "title": "Aggregation-Induced Emission",
+   "journal": "Progress in Chemistry",
+   "authors": [],
+   "volume": null,
+   "page": null,
+   "year": 2022,
+   "date": [
+    2022
+   ],
+   "error": true
+  },
+  {
+   "doi": "10.1016/j.dyepig.2021.109505",
+   "title": "Modulation of red organic room-temperature phosphorescence in heavy atom-free phosphors",
+   "authors": [
+    "Fan Liao",
+    "Jiajun Du",
+    "Xiancheng Nie",
+    "Ziye Wu",
+    "Hao Su",
+    "Wenhuan Huang",
+    "Tao Wang",
+    "Biao Chen",
+    "Jun Jiang",
+    "Xuepeng Zhang",
+    "Guoqing Zhang"
+   ],
+   "journal": "Dyes and Pigments",
+   "volume": "193",
+   "page": "109505",
+   "year": 2021,
+   "date": [
+    2021,
+    9
+   ]
+  },
+  {
+   "doi": "10.1021/acs.jpclett.1c00520",
+   "title": "Aromatic Electrophilic Directing for Fluorescence and Room-Temperature Phosphorescence Modulation",
+   "authors": [
+    "Xiancheng Nie",
+    "Hao Su",
+    "Tao Wang",
+    "Hui Miao",
+    "Biao Chen",
+    "Guoqing Zhang"
+   ],
+   "journal": "The Journal of Physical Chemistry Letters",
+   "volume": "12",
+   "page": "3099-3105",
+   "year": 2021,
+   "date": [
+    2021,
+    3,
+    23
+   ]
+  },
+  {
+   "doi": "10.1038/s41467-021-21676-5",
+   "title": "Thermochromic aggregation-induced dual phosphorescence via temperature-dependent sp3-linked donor-acceptor electronic coupling",
+   "authors": [
+    "Tao Wang",
+    "Zhubin Hu",
+    "Xiancheng Nie",
+    "Linkun Huang",
+    "Miao Hui",
+    "Xiang Sun",
+    "Guoqing Zhang"
+   ],
+   "journal": "Nature Communications",
+   "volume": "12",
+   "page": "1364",
+   "year": 2021,
+   "date": [
+    2021,
+    3,
+    1
+   ]
+  },
+  {
+   "doi": "10.1039/d1tc04156h",
+   "title": "Modulation of OLED efficiency\n                    <i>via</i>\n                    a combination of aromatic electrophilic directing and intramolecular charge transfer",
+   "authors": [
+    "Xiancheng Nie",
+    "Tao Wang",
+    "Wenhuan Huang",
+    "Hao Su",
+    "Biao Chen",
+    "Xuepeng Zhang",
+    "Guoqing Zhang"
+   ],
+   "journal": "Journal of Materials Chemistry C",
+   "volume": "9",
+   "page": "15698-15706",
+   "year": 2021,
+   "date": [
+    2021
+   ]
+  },
+  {
+   "doi": "10.1016/j.polymer.2020.123017",
+   "title": "Development of spiropyran bonded bio-based waterborne polyurethanes for mechanical-responsive color-variable films",
+   "authors": [
+    "Kun-Peng Wang",
+    "Yi-Peng Deng",
+    "Tao Wang",
+    "Qi-Dong Wang",
+    "Cheng-Gen Qian",
+    "Xing-Yuan Zhang"
+   ],
+   "journal": "Polymer",
+   "volume": "210",
+   "page": "123017",
+   "year": 2020,
+   "date": [
+    2020,
+    12
+   ]
+  },
+  {
+   "doi": "10.1002/chem.201905865",
+   "title": "Persistent Radical Pairs between N‐Substituted Naphthalimide and Carbanion Exhibit p\n                    <i>K</i>\n                    <sub>a</sub>\n                    ‐Dependent UV/Vis Absorption",
+   "authors": [
+    "Xiancheng Nie",
+    "Hao Su",
+    "Xiaoyu Chen",
+    "Wenhuan Huang",
+    "Linkun Huang",
+    "Biao Chen",
+    "Hui Miao",
+    "Jun Jiang",
+    "Tao Wang",
+    "Guoqing Zhang"
+   ],
+   "journal": "Chemistry – A European Journal",
+   "volume": "26",
+   "page": "12743-12746",
+   "year": 2020,
+   "date": [
+    2020,
+    9,
+    16
+   ]
+  },
+  {
+   "doi": "10.1021/acsami.0c13886",
+   "title": "Quantifiable Polymeric Fluorescent Ratiometric γ-ray Chemosensor",
+   "authors": [
+    "Bin Pei",
+    "Hao Su",
+    "Biao Chen",
+    "Wenhuan Huang",
+    "Xuepeng Zhang",
+    "Hui Miao",
+    "Yucai Wang",
+    "Tao Wang",
+    "Guoqing Zhang"
+   ],
+   "journal": "ACS Applied Materials &amp; Interfaces",
+   "volume": "12",
+   "page": "42210-42216",
+   "year": 2020,
+   "date": [
+    2020,
+    8,
+    20
+   ]
+  },
+  {
+   "doi": "10.1039/D0CC04604C",
+   "title": "Are pyridinium ylides radicals?",
+   "authors": [
+    "Fan Liao",
+    "Wenhuan Huang",
+    "Biao Chen",
+    "Zijing Ding",
+    "Xingxing Li",
+    "Hao Su",
+    "Tao Wang",
+    "Yucai Wang",
+    "Hui Miao",
+    "Xiaolong Zhang",
+    "Yi Luo",
+    "Jinlong Yang",
+    "Guoqing Zhang"
+   ],
+   "journal": "Chemical Communications",
+   "volume": "56",
+   "page": "11287-11290",
+   "year": 2020,
+   "date": [
+    2020
+   ]
+  },
+  {
+   "doi": "10.1002/adma.201904273",
+   "title": "Aggregation‐Induced Dual‐Phosphorescence from Organic Molecules for Nondoped Light‐Emitting Diodes",
+   "authors": [
+    "Tao Wang",
+    "Xiaoge Su",
+    "Xuepeng Zhang",
+    "Xiancheng Nie",
+    "Linkun Huang",
+    "Xingyuan Zhang",
+    "Xiang Sun",
+    "Yi Luo",
+    "Guoqing Zhang"
+   ],
+   "journal": "Advanced Materials",
+   "volume": "31",
+   "page": "1904273",
+   "year": 2019,
+   "date": [
+    2019,
+    11,
+    6
+   ]
+  },
+  {
+   "doi": "10.1002/asia.201900423",
+   "title": "Modulation of Thermally Activated Delayed Fluorescence in Waterborne Polyurethanes via Charge‐Transfer Effect",
+   "authors": [
+    "Zongren Li",
+    "Tao Wang",
+    "Dong Xu",
+    "Jie Zuo",
+    "Xinyu Li",
+    "Zhiwei Li",
+    "Fei Xu",
+    "Xingyuan Zhang"
+   ],
+   "journal": "Chemistry – An Asian Journal",
+   "volume": "14",
+   "page": "2302-2308",
+   "year": 2019,
+   "date": [
+    2019,
+    6,
+    5
+   ]
+  },
+  {
+   "doi": "10.1039/C9TC02266J",
+   "title": "A combinatory approach towards the design of organic polymer luminescent materials",
+   "authors": [
+    "Tao Wang",
+    "Xiaoge Su",
+    "Xuepeng Zhang",
+    "Wenhuan Huang",
+    "Linkun Huang",
+    "Xingyuan Zhang",
+    "Xiang Sun",
+    "Yi Luo",
+    "Guoqing Zhang"
+   ],
+   "journal": "Journal of Materials Chemistry C",
+   "volume": "7",
+   "page": "9917-9925",
+   "year": 2019,
+   "date": [
+    2019
+   ]
+  },
+  {
+   "doi": "10.1039/C7QM00399D",
+   "title": "Waterborne polyacrylates with thermally activated delayed fluorescence and two-state phosphorescence",
+   "authors": [
+    "Tao Wang",
+    "Zhen Tang",
+    "Dong Xu",
+    "Wei Sun",
+    "Yipeng Deng",
+    "Qidong Wang",
+    "Xingyuan Zhang",
+    "Peifeng Su",
+    "Guoqing Zhang"
+   ],
+   "journal": "Materials Chemistry Frontiers",
+   "volume": "2",
+   "page": "559-565",
+   "year": 2018,
+   "date": [
+    2018
+   ]
+  },
+  {
+   "doi": "10.1039/C7PY01995E",
+   "title": "Waterborne polyurethanes prepared from benzophenone derivatives with delayed fluorescence and room-temperature phosphorescence",
+   "authors": [
+    "Tao Wang",
+    "Cao Zhou",
+    "Xingyuan Zhang",
+    "Dong Xu"
+   ],
+   "journal": "Polymer Chemistry",
+   "volume": "9",
+   "page": "1303-1308",
+   "year": 2018,
+   "date": [
+    2018
+   ]
+  },
+  {
+   "doi": "10.3390/MA10111247",
+   "title": "Waterborne Polyurethane Coatings with Covalently Linked Black Dye Sudan Black B",
+   "authors": [
+    "Tao Wang",
+    "Wei Sun",
+    "Xingyuan Zhang",
+    "Haiyan Xu",
+    "Fei Xu"
+   ],
+   "journal": "Materials",
+   "volume": "10",
+   "page": "1247",
+   "year": 2017,
+   "date": [
+    2017,
+    10,
+    28
+   ]
+  },
+  {
+   "doi": "10.1021/acs.jpca.7b08268",
+   "title": "Macroscopic Wires from Fluorophore-Quencher Dyads with Long-Lived Blue Emission",
+   "authors": [
+    "Tao Wang",
+    "Ziye Wu",
+    "Wei Sun",
+    "Shengye Jin",
+    "Xingyuan Zhang",
+    "Chuanyao Zhou",
+    "Jun Jiang",
+    "Yi Luo",
+    "Guoqing Zhang"
+   ],
+   "journal": "The Journal of Physical Chemistry A",
+   "volume": "121",
+   "page": "7183-7190",
+   "year": 2017,
+   "date": [
+    2017,
+    9,
+    13
+   ]
+  },
+  {
+   "doi": "10.3390/polym9090411",
+   "title": "Dual-Emissive Waterborne Polyurethanes Prepared from Naphthalimide Derivative",
+   "authors": [
+    "Tao Wang",
+    "Xingyuan Zhang",
+    "Yipeng Deng",
+    "Wei Sun",
+    "Qidong Wang",
+    "Fei Xu",
+    "Xiaowen Huang"
+   ],
+   "journal": "Polymers",
+   "volume": "9",
+   "page": "411",
+   "year": 2017,
+   "date": [
+    2017,
+    9,
+    3
+   ]
+  },
+  {
+   "doi": "10.1021/ACS.JPCA.7B01711",
+   "title": "Protonation-Induced Room-Temperature Phosphorescence in Fluorescent Polyurethane",
+   "authors": [
+    "Wei Sun",
+    "Zhaowu Wang",
+    "Tao Wang",
+    "Li Yang",
+    "Jun Jiang",
+    "Xingyuan Zhang",
+    "Yi Luo",
+    "Guoqing Zhang"
+   ],
+   "journal": "The Journal of Physical Chemistry A",
+   "volume": "121",
+   "page": "4225-4232",
+   "year": 2017,
+   "date": [
+    2017,
+    5,
+    26
+   ]
+  },
+  {
+   "doi": "10.1002/ANIE.201601252",
+   "title": "Versatile Room‐Temperature‐Phosphorescent Materials Prepared from N‐Substituted Naphthalimides: Emission Enhancement and Chemical Conjugation",
+   "authors": [
+    "Xiaofeng Chen",
+    "Cheng Xu",
+    "Tao Wang",
+    "Cao Zhou",
+    "Jiajun Du",
+    "Zhongping Wang",
+    "Hangxun Xu",
+    "Tongqing Xie",
+    "Guoqiang Bi",
+    "Jun Jiang",
+    "Xuepeng Zhang",
+    "James N. Demas",
+    "Carl O. Trindle",
+    "Yi Luo",
+    "Guoqing Zhang"
+   ],
+   "journal": "Angewandte Chemie International Edition",
+   "volume": "55",
+   "page": "9872-9876",
+   "year": 2016,
+   "date": [
+    2016,
+    7,
+    7
+   ]
+  },
+  {
+   "doi": "10.1016/j.microc.2026.119166",
+   "title": "Metal-free multicomponent spirocyclization based on isatin and quinoline toward spirooxazine for rapid, sensitive, and selective detection of human serum albumin",
+   "authors": [
+    "Peixuan Dong",
+    "Kai Zhang",
+    "Luojie Zhu",
+    "Jiarun Li",
+    "Tao Wang",
+    "Baicheng Mei",
+    "Jianbing Shi",
+    "Bin Tong",
+    "Zhengxu Cai",
+    "Peng Sun",
+    "Yuping Dong"
+   ],
+   "journal": "Microchemical Journal",
+   "volume": "228",
+   "page": "119166",
+   "year": 2026,
+   "date": [
+    2026,
+    9
+   ]
+  },
+  {
+   "doi": "10.1002/adom.202501022",
+   "title": "Halogen Bonding‐Enabled Stabilization of Copper(I) Cluster Scintillators in Aqueous Environments",
+   "authors": [
+    "Chang Gu",
+    "Tao Wang",
+    "Xian Qin",
+    "Xiaogang Liu"
+   ],
+   "journal": "Advanced Optical Materials",
+   "volume": "13",
+   "page": "2501022",
+   "year": 2025,
+   "date": [
+    2025,
+    5,
+    16
+   ]
+  },
+  {
+   "doi": "10.1016/j.dyepig.2025.113080",
+   "title": "Probes based on fluorescein derivatives for rapid detection of H3N2 virus spike proteins without separation",
+   "authors": [
+    "Jian Wang",
+    "Xiaoling Pan",
+    "Kai Zhang",
+    "Shichen Zhang",
+    "Peng Sun",
+    "Jianbing Shi",
+    "Junge Zhi",
+    "Xiaoyan Zheng",
+    "Tao Wang",
+    "Zhengxu Cai",
+    "Zi Li",
+    "Dayan Wang",
+    "Bin Tong",
+    "Yuping Dong"
+   ],
+   "journal": "Dyes and Pigments",
+   "volume": "243",
+   "page": "113080",
+   "year": 2025,
+   "date": [
+    2025,
+    12
+   ]
+  },
+  {
+   "doi": "10.7536/PC211037",
+   "title": "聚集诱导发光",
+   "authors": [
+    "Pengbo Han",
+    "He Xu",
+    "Zhongfu An",
+    "Zheyi Cai",
+    "Zhengxu Cai",
+    "Hui Chao",
+    "Biao Chen",
+    "Ming Chen",
+    "Yu Chen",
+    "Zhenguo Chi",
+    "Shuting Dai",
+    "Dan Ding",
+    "Yuping Dong",
+    "Zhiyuan Gao",
+    "Weijiang Guan",
+    "Zikai He",
+    "Jingjing Hu",
+    "Rong Hu",
+    "Yixiong Hu",
+    "Qiuyi Huang",
+    "Miaomiao Kang",
+    "Danxia Li",
+    "Jisen Li",
+    "Shuzhen Li",
+    "Wenlang Li",
+    "Zhen Li",
+    "Xinlin Lin",
+    "Huaying Liu",
+    "Peiying Liu",
+    "Xiaoding Lou",
+    "Chao Lu",
+    "Dongge Ma",
+    "Hanlin Ou",
+    "Juan Ouyang",
+    "Qian Peng",
+    "Jun Qian",
+    "Anjun Qin",
+    "Jiamin Qu",
+    "Jianbing Shi",
+    "Zhigang Shuai",
+    "Lihe Sun",
+    "Rui Tian",
+    "Wenjing Tian",
+    "Bin Tong",
+    "Huiliang Wang",
+    "Dong Wang",
+    "He Wang",
+    "Tao Wang",
+    "Xiao Wang",
+    "Yucheng Wang",
+    "Shuizhu Wu",
+    "Fan Xia",
+    "Yujun Xie",
+    "Kai Xiong",
+    "Bin Xu",
+    "Dongpeng Yan",
+    "Haibo Yang",
+    "Qingzheng Yang",
+    "Zhiyong Yang",
+    "Lizhen Yuan",
+    "Wangzhang Yuan",
+    "Shuangquan Zang",
+    "Fang Zeng",
+    "Jiajie Zeng",
+    "Zhuo Zeng",
+    "Guoqing Zhang",
+    "Xiaoyan Zhang",
+    "Xuepeng Zhang",
+    "Yi Zhang",
+    "Yufan Zhang",
+    "Zhijun Zhang",
+    "Juan Zhao",
+    "Zheng Zhao",
+    "Zihao Zhao",
+    "Zujin Zhao",
+    "Ben Zhong Tang"
+   ],
+   "journal": "Progress in Chemistry",
+   "volume": "34",
+   "page": "1-130",
+   "year": 2022,
+   "date": [
+    2022,
+    1,
+    20
+   ]
+  }
+ ],
+ "pc_corr": [
+  "Anjun Qin",
+  "Ben Zhong Tang",
+  "Chao Lu",
+  "Dan Ding",
+  "Dong Wang",
+  "Dongge Ma",
+  "Dongpeng Yan",
+  "Fan Xia",
+  "Guoqing Zhang",
+  "Haibo Yang",
+  "Hui Chao",
+  "Huiliang Wang",
+  "Jun Qian",
+  "Ming Chen",
+  "Qian Peng",
+  "Qingzheng Yang",
+  "Rong Hu",
+  "Shuangquan Zang",
+  "Shuizhu Wu",
+  "Wangzhang Yuan",
+  "Wenjing Tian",
+  "Xiaoding Lou",
+  "Yuping Dong",
+  "Zhen Li",
+  "Zheng Zhao",
+  "Zhenguo Chi",
+  "Zhengxu Cai",
+  "Zhigang Shuai",
+  "Zhongfu An",
+  "Zikai He",
+  "Zujin Zhao"
+ ]
+}

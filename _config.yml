@@ -43,3 +43,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
+
+# Tools and data for rebuilding the publications list (not part of the site)
+exclude:
+  - tools
