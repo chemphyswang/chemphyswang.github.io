@@ -205,6 +205,10 @@ BADGES = {
     '10.1002/anie.8043102': ('Inside Back Cover', 'https://onlinelibrary.wiley.com/doi/10.1002/anie.2026-m2506061400'),
 }
 
+NOTES = {
+    '10.1002/agt2.70172': 'Special Collection: 2025 Emerging Investigators',
+}
+
 def render_item(p, num):
     vol = str(p['volume']) if p.get('volume') not in (None, '', 'None') else None
     vol_part = f"<em>{html.escape(vol)}</em>, " if vol else ''
@@ -220,12 +224,15 @@ def render_item(p, num):
         fname, alt = FIGURE_BY_DOI[p['doi']]
         cls = 'pub-figure'
         figure = f'\n      <div class="{cls}"><img src="/images/pubs-2026/{fname}" alt="{alt}"></div>'
+    note = ''
+    if p['doi'] in NOTES:
+        note = f'\n      <div class="pub-note">{esc(NOTES[p["doi"]])}</div>'
     return f'''  <div class="pub-item">
     <span class="pub-num">{num}.</span>
     <div class="pub-text">
       <div class="pub-title"><a href="https://doi.org/{p['doi']}" target="_blank" rel="noopener">{esc(titlecase(TITLE_OVERRIDE.get(p['doi'], p['title'])))}</a></div>
       <div class="pub-authors">{render_authors(p)}</div>
-      <div class="pub-venue">{venue}</div>{badge}{figure}
+      <div class="pub-venue">{venue}</div>{note}{badge}{figure}
     </div>
   </div>'''
 
@@ -241,6 +248,8 @@ STYLE = '''<style>
 [data-theme="dark"] .pub-title a:hover{color:#e5484d;border-bottom-color:rgba(229,72,77,.55)}
 .pub-authors{line-height:1.5;margin-bottom:3px;font-size:0.9em}
 .pub-venue{line-height:1.5}
+.pub-note{font-size:0.85em;color:#666;margin-top:2px}
+[data-theme="dark"] .pub-note{color:#a0a0ab}
 @media (max-width:480px){.pub-num{flex:0 0 26px;font-size:0.95em}}
 </style>'''
 
