@@ -5067,30 +5067,30 @@ body,
 }
 
 /* --- Prose links: Penn blue at rest, Penn red on hover --- */
-.article-wrap p > a,
-.article-wrap li > a {
+.article-wrap p a,
+.article-wrap li a {
   color: #011f5b;
   border-bottom: 1px solid rgba(1, 31, 91, 0.28);
 }
-.article-wrap p > a:hover,
-.article-wrap li > a:hover {
+.article-wrap p a:hover,
+.article-wrap li a:hover {
   color: #990000;
   border-bottom: 1px solid rgba(153, 0, 0, 0.45);
 }
-[data-theme="dark"] .article-wrap p > a,
-[data-theme="dark"] .article-wrap li > a {
+[data-theme="dark"] .article-wrap p a,
+[data-theme="dark"] .article-wrap li a {
   color: #6ea8ff;
   border-bottom: 1px solid rgba(110, 168, 255, 0.35);
 }
-[data-theme="dark"] .article-wrap p > a:hover,
-[data-theme="dark"] .article-wrap li > a:hover {
+[data-theme="dark"] .article-wrap p a:hover,
+[data-theme="dark"] .article-wrap li a:hover {
   color: #e5484d;
   border-bottom: 1px solid rgba(229, 72, 77, 0.5);
 }
 /* Dark mode paints <strong> near-white; bold text inside a link
    must keep the link color (e.g. paper titles in News cards) */
-[data-theme="dark"] .article-wrap p > a strong,
-[data-theme="dark"] .article-wrap li > a strong {
+[data-theme="dark"] .article-wrap p a strong,
+[data-theme="dark"] .article-wrap li a strong {
   color: inherit;
 }
 
