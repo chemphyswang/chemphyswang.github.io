@@ -3224,9 +3224,61 @@ img.mfp-img {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Publications page: year navigation row (replaces the page title) */
+.pub-year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 0 0 0.5em;
+  padding-bottom: 0.8em;
+}
+
+.pub-year-nav a {
+  font-weight: 700;
+  font-size: 1.05em;
+  color: #011f5b;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+  border-bottom: none !important;
+  transition: color 0.2s ease;
+}
+
+.pub-year-nav a:hover {
+  color: #990000;
+}
+
+/* Publications page: year group headings */
+.pub-year {
+  font-weight: 700;
+  font-size: 1.05em;
+  color: #011f5b;
+  margin: 1.4em 0 0.3em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #d0d0d0;
+  /* offset for the sticky header when jumping via year nav links */
+  scroll-margin-top: 140px;
+}
+
+.pub-year:first-of-type {
+  margin-top: 0.6em;
+}
+
+[data-theme="dark"] .pub-year-nav a {
+  color: #9db9ff;
+}
+
+[data-theme="dark"] .pub-year-nav a:hover {
+  color: #6ea8ff;
+}
+
+[data-theme="dark"] .pub-year {
+  color: #9db9ff;
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
 /* Journal cover highlight badge (e.g. Inside Back Cover) */
-.cover-badge {
-  display: inline-block;
+.cover-badge {  display: inline-block;
   margin-top: 8px;
   padding: 3px 10px;
   background: #990000;
