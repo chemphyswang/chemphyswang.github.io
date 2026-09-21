@@ -3233,6 +3233,11 @@ img.mfp-img {
   padding-bottom: 0.6em;
 }
 
+/* Publication entry numbers: bold near-white in dark mode, matching the venue year */
+[data-theme="dark"] .pub-num {
+  color: #f5f5f7;
+}
+
 .pub-year-figures img {
   max-width: 7cm;
   width: auto;
@@ -3275,10 +3280,21 @@ img.mfp-img {
   z-index: 1200;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu,
+/* visibility controlled by JS (.open) for the 1s close delay; keep focus-within for keyboard */
 .nav-dropdown:focus-within .nav-dropdown-menu,
 .nav-dropdown.open .nav-dropdown-menu {
   display: flex;
+}
+
+/* "All" item at the top of the dropdown */
+.nav-dropdown-menu .nav-dropdown-all {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 4px;
+  padding-bottom: 9px;
+}
+
+[data-theme="dark"] .nav-dropdown-menu .nav-dropdown-all {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-dropdown-menu a {

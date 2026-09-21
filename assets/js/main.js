@@ -2005,19 +2005,42 @@ $(function() {
   });
 });
 
-// Publications year dropdown: tap-to-open on touch devices
+// Publications year dropdown: hover with 1s close delay + touch tap-to-open
 $(function() {
   var $dd = $('.nav-dropdown');
   if (!$dd.length) return;
-  if (!window.matchMedia('(hover: none)').matches) return;
-  $dd.find('> a').on('click', function(e) {
-    if (!$dd.hasClass('open')) {
-      e.preventDefault();
-      $dd.addClass('open');
-    }
-  });
+  var hoverTimer = null;
+
+  var openMenu = function() {
+    clearTimeout(hoverTimer);
+    $dd.addClass('open');
+  };
+
+  // Stay open ~1s after the mouse leaves, so users can reach the menu;
+  // never close while the pointer is over the tab or the menu itself
+  var queueClose = function() {
+    clearTimeout(hoverTimer);
+    hoverTimer = setTimeout(function() {
+      $dd.removeClass('open');
+    }, 1000);
+  };
+
+  $dd.on('mouseenter', openMenu);
+  $dd.on('mouseleave', queueClose);
+
+  // Touch devices: first tap opens the menu, second tap navigates
+  if (window.matchMedia('(hover: none)').matches) {
+    $dd.find('> a').on('click', function(e) {
+      if (!$dd.hasClass('open')) {
+        e.preventDefault();
+        $dd.addClass('open');
+      }
+    });
+  }
+
   $(document).on('click', function(e) {
     if (!$(e.target).closest('.nav-dropdown').length) {
+      clearTimeout(hoverTimer);
       $dd.removeClass('open');
     }
   });
