@@ -2004,3 +2004,21 @@ $(function() {
     return false;
   });
 });
+
+// Publications year dropdown: tap-to-open on touch devices
+$(function() {
+  var $dd = $('.nav-dropdown');
+  if (!$dd.length) return;
+  if (!window.matchMedia('(hover: none)').matches) return;
+  $dd.find('> a').on('click', function(e) {
+    if (!$dd.hasClass('open')) {
+      e.preventDefault();
+      $dd.addClass('open');
+    }
+  });
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('.nav-dropdown').length) {
+      $dd.removeClass('open');
+    }
+  });
+});

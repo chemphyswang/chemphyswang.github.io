@@ -57,7 +57,8 @@
     top: 0;
     z-index: 1000;
     background: transparent;
-    overflow: hidden;
+    /* overflow must stay visible so the Publications year dropdown can drop down */
+    overflow: visible;
     isolation: isolate;
   }
 
@@ -181,7 +182,8 @@
     align-items: center;
   }
   /* Slash separators between tabs (UPenn-style) */
-  .header-nav a:not(:last-child)::after {
+  .header-nav > a:not(:last-child)::after,
+  .header-nav > .nav-dropdown:not(:last-child) > a::after {
     content: "/";
     margin: 0 16px;
     color: rgba(0, 0, 0, 0.28);
@@ -272,7 +274,8 @@
       font-size: 12px;
       letter-spacing: 0.04em;
     }
-    .header-nav a:not(:last-child)::after {
+    .header-nav > a:not(:last-child)::after,
+    .header-nav > .nav-dropdown:not(:last-child) > a::after {
       margin: 0 10px;
     }
   }
@@ -296,7 +299,8 @@
       font-size: 11px;
       letter-spacing: 0.03em;
     }
-    .header-nav a:not(:last-child)::after {
+    .header-nav > a:not(:last-child)::after,
+    .header-nav > .nav-dropdown:not(:last-child) > a::after {
       margin: 0 7px;
     }
     /* 减小导航栏和内容之间的间距 */
@@ -605,7 +609,22 @@
           {% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
           <a href="{{ site.url }}/"{% if url == '/' %} class="is-current"{% endif %}>Home</a>
           <a href="{{ site.url }}/news/"{% if url == '/news/' %} class="is-current"{% endif %}>News</a>
-          <a href="{{ site.url }}/publications/"{% if url == '/publications/' %} class="is-current"{% endif %}>Publications</a>
+          <span class="nav-dropdown">
+            <a href="{{ site.url }}/publications/"{% if url == '/publications/' %} class="is-current"{% endif %}>Publications</a>
+            <span class="nav-dropdown-menu" role="menu">
+              <a href="{{ site.url }}/publications/#year-2026">2026</a>
+              <a href="{{ site.url }}/publications/#year-2025">2025</a>
+              <a href="{{ site.url }}/publications/#year-2024">2024</a>
+              <a href="{{ site.url }}/publications/#year-2023">2023</a>
+              <a href="{{ site.url }}/publications/#year-2022">2022</a>
+              <a href="{{ site.url }}/publications/#year-2021">2021</a>
+              <a href="{{ site.url }}/publications/#year-2020">2020</a>
+              <a href="{{ site.url }}/publications/#year-2019">2019</a>
+              <a href="{{ site.url }}/publications/#year-2018">2018</a>
+              <a href="{{ site.url }}/publications/#year-2017">2017</a>
+              <a href="{{ site.url }}/publications/#year-2016">2016</a>
+            </span>
+          </span>
           <a href="{{ site.url }}/hobbies/"{% if url == '/hobbies/' %} class="is-current"{% endif %}>Beyond Research</a>
         </nav>
       </div>
