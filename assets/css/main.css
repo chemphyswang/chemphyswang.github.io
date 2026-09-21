@@ -5257,3 +5257,13 @@ hr {
 [data-theme="dark"] .article-wrap font[color="#990000"] {
   color: #e5484d;
 }
+
+/* Scholar icon before the Google Scholar line on the home bio */
+.scholar-icon {
+  color: #011f5b;
+  font-size: 1.05em;
+  margin-right: 0.15em;
+}
+[data-theme="dark"] .scholar-icon {
+  color: #6ea8ff;
+}

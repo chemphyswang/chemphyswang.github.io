@@ -14,6 +14,8 @@ Tao Wang is currently an associate professor in the School of Materials Science 
 
 **ORCID: [0000-0003-4200-3712](https://orcid.org/0000-0003-4200-3712)**
 
+<i class="ai ai-google-scholar scholar-icon" aria-hidden="true"></i> **[Google Scholar](https://scholar.google.com/citations?user=N6H95ssAAAAJ&hl=en)**
+
 ## Research Interests
 
 - Design of Room-Temperature Phosphorescence Materials
