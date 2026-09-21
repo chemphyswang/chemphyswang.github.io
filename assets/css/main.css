@@ -3275,6 +3275,9 @@ img.mfp-img {
   display: none;
   flex-direction: column;
   min-width: 96px;
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 6px 0;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
