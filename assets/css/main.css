@@ -3232,7 +3232,7 @@ img.mfp-img {
 
 .pub-figure img {
   display: block;
-  max-width: 9cm;
+  max-width: min(9cm, 100%);
   width: auto;
   height: auto;
   margin: 0 auto;
@@ -3244,7 +3244,7 @@ img.mfp-img {
 }
 
 .pub-figure--sm img {
-  max-width: 9cm;
+  max-width: min(9cm, 100%);
 }
 
 [data-theme="dark"] .pub-figure img {

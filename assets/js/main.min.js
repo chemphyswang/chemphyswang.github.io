@@ -2047,6 +2047,19 @@ $(function() {
         $dd.addClass('open');
       }
     });
+
+    // Scrolling the page dismisses the menu immediately so it never blocks
+    // content; scrolling inside the menu itself (overflow-y: auto) keeps it open
+    $(document).on('touchmove', function(e) {
+      if (!$(e.target).closest('.nav-dropdown-menu').length) {
+        clearTimeout(hoverTimer);
+        $dd.removeClass('open');
+      }
+    });
+    $(window).on('scroll', function() {
+      clearTimeout(hoverTimer);
+      $dd.removeClass('open');
+    });
   }
 
   $(document).on('click', function(e) {
