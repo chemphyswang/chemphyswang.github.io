@@ -6,7 +6,8 @@ layout: page
 
 <img src="/images/avatar.jpg" class="floatpic">
 
-**Tao Wang, PhD, Assoc. Prof.**.<br>
+**Tao Wang, PhD, Assoc. Prof.**<br>
+**Beijing Institute of Technology**<br>
 
 Tao Wang is currently an associate professor in the School of Materials Science & Engineering at the [Beijing Institute of Technology](https://www.bit.edu.cn/). He obtained his Ph.D. in 2019 from the [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/) under the supervision of Professors [Guoqing Zhang](https://www.hfnl.ustc.edu.cn/2022/0905/c36716a705572/page.htm) and Xingyuan Zhang, where he worked on luminescent polymers. Following this, he joined the Hefei National Laboratory of Physical Science at the Microscale at USTC as a postdoctoral fellow, continuing his work with Professor [Guoqing Zhang](https://www.hfnl.ustc.edu.cn/2022/0905/c36716a705572/page.htm) (2019–2020). In 2020, he was awarded the prestigious [Marie Skłodowska-Curie Research Fellowship](https://cordis.europa.eu/project/id/897098) and moved to the [University of St Andrews](https://www.st-andrews.ac.uk/) to work with Professor [Eli Zysman-Colman](https://www.zysman-colman.com/home). In 2022, he joined the [National University of Singapore](https://www.nus.edu.sg/) to collaborate with Professor [Xiaogang Liu](http://liuxg.science.nus.edu.sg/). In 2024, Tao joined the [Beijing Institute of Technology](https://www.bit.edu.cn/). His research focuses on organic luminescent materials for diverse applications, and he has authored more than 45 publications.<br>
 
