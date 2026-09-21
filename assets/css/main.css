@@ -3224,6 +3224,30 @@ img.mfp-img {
   -webkit-font-smoothing: antialiased;
 }
 
+/* 2026 article figures shown under the 2026 publication group */
+.pub-year-figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0.6em 0 0.2em;
+  padding-bottom: 0.6em;
+}
+
+.pub-year-figures img {
+  max-width: 7cm;
+  width: auto;
+  height: auto;
+  padding: 4px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+[data-theme="dark"] .pub-year-figures img {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
 /* Header nav: Publications year dropdown */
 .header-sticky-wrapper {
   overflow: visible;
