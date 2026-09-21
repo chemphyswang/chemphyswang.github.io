@@ -105,3 +105,7 @@ Everything personal sits in a handful of files:
 ## License
 
 Code is released under the [MIT License](LICENSE). Site content (text, photos and publication material) © Siming Deng.
+
+## Site Conventions (owner rules)
+
+- **No scroll-gated reveals**: content on any page or tab must be fully visible on load. Never hide content (e.g. `opacity: 0` waiting for IntersectionObserver/scroll) so that it only appears after scrolling. Entry animations may play on load for above-the-fold elements only.
