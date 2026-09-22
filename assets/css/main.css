@@ -915,6 +915,7 @@ svg:not(:root) {
 img.floatpic {
   float: right;
   margin-left: 1em;
+  margin-top: 1.65em;
   width: 25%;
 }
 
