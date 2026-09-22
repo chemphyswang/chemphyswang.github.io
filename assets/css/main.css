@@ -5310,9 +5310,13 @@ html[data-lang="zh"] li.lang-zh {
 }
 
 /* The theme pulls consecutive paragraphs together (p + p => margin-top: -1.5em).
-   When the English twin is display:none, the Chinese paragraph still matches
-   that selector and rides up over the preceding heading (contact page address).
-   Neutralize it for ZH paragraphs that directly follow their EN twin. */
+   Chinese twins must get the same pull-up so ZH spacing matches EN spacing;
+   the exception is a ZH paragraph whose EN twin directly follows a heading —
+   there the small heading margin would let the negative margin overlap
+   the title (contact page address). */
 .article-wrap p.lang-en + p.lang-zh {
+  margin-top: -1.5em;
+}
+.article-wrap :is(h1, h2, h3, h4, h5, h6) + p.lang-en + p.lang-zh {
   margin-top: 0;
 }
