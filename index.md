@@ -76,7 +76,7 @@ Tao Wang is currently an associate professor in the School of Materials Science 
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role"><span class="lang-en">Postdoctoral Research Fellow</span><span class="lang-zh">博士后研究员</span> <span class="timeline-sep">|</span> <span class="timeline-company"><span class="lang-en">National University of Singapore</span><span class="lang-zh">新加坡国立大学</span></span></div>
+        <div class="timeline-role"><span class="lang-en">Postdoctoral Research Fellow</span><span class="lang-zh">博士后</span> <span class="timeline-sep">|</span> <span class="timeline-company"><span class="lang-en">National University of Singapore</span><span class="lang-zh">新加坡国立大学</span></span></div>
         <span class="timeline-time"><span class="lang-en">Nov. 2022 - Jun. 2024</span><span class="lang-zh">2022年11月 - 2024年6月</span></span>
       </div>
       <div class="timeline-details">
@@ -91,7 +91,7 @@ Tao Wang is currently an associate professor in the School of Materials Science 
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role"><span class="lang-en">Postdoctoral Research Fellow; Marie Skłodowska-Curie Fellow</span><span class="lang-zh">博士后研究员；玛丽·居里学者</span> <span class="timeline-sep">|</span> <span class="timeline-company"><span class="lang-en">University of St Andrews</span><span class="lang-zh">圣安德鲁斯大学</span></span></div>
+        <div class="timeline-role"><span class="lang-en">Postdoctoral Research Fellow; Marie Skłodowska-Curie Fellow</span><span class="lang-zh">博士后</span> <span class="timeline-sep">|</span> <span class="timeline-company"><span class="lang-en">University of St Andrews</span><span class="lang-zh">圣安德鲁斯大学</span></span></div>
         <span class="timeline-time"><span class="lang-en">Oct. 2020 - Nov. 2022</span><span class="lang-zh">2020年10月 - 2022年11月</span></span>
       </div>
       <div class="timeline-details">
@@ -106,7 +106,7 @@ Tao Wang is currently an associate professor in the School of Materials Science 
     </div>
     <div class="timeline-card">
       <div class="timeline-header">
-        <div class="timeline-role"><span class="lang-en">Postdoctoral Fellow</span><span class="lang-zh">博士后</span> <span class="timeline-sep">|</span> <span class="timeline-company"><span class="lang-en">University of Science and Technology of China</span><span class="lang-zh">中国科学技术大学</span></span></div>
+        <div class="timeline-role"><span class="lang-en">Postdoctoral Research Fellow</span><span class="lang-zh">博士后</span> <span class="timeline-sep">|</span> <span class="timeline-company"><span class="lang-en">University of Science and Technology of China</span><span class="lang-zh">中国科学技术大学</span></span></div>
         <span class="timeline-time"><span class="lang-en">Jul. 2019 - Oct. 2020</span><span class="lang-zh">2019年7月 - 2020年10月</span></span>
       </div>
       <div class="timeline-details">
@@ -125,7 +125,7 @@ Tao Wang is currently an associate professor in the School of Materials Science 
         <span class="timeline-time"><span class="lang-en">Sep. 2014 - Jun. 2019</span><span class="lang-zh">2014年9月 - 2019年6月</span></span>
       </div>
       <div class="timeline-details">
-        <span class="lang-en">Hefei, Anhui, China · Supervisors: Prof. Guoqing Zhang and Prof. Xingyuan Zhang</span><span class="lang-zh">中国安徽合肥 · 导师：张国庆教授、张兴元教授</span>
+        <span class="lang-en">Hefei, China · Supervisors: Prof. Guoqing Zhang and Prof. Xingyuan Zhang</span><span class="lang-zh">中国安徽合肥 · 导师：张国庆教授、张兴元教授</span>
       </div>
     </div>
   </div>
@@ -140,7 +140,7 @@ Tao Wang is currently an associate professor in the School of Materials Science 
         <span class="timeline-time"><span class="lang-en">Sep. 2010 - Jul. 2014</span><span class="lang-zh">2010年9月 - 2014年7月</span></span>
       </div>
       <div class="timeline-details">
-        <span class="lang-en">Hefei, Anhui, China</span><span class="lang-zh">中国安徽合肥</span>
+        <span class="lang-en">Hefei, China</span><span class="lang-zh">中国安徽合肥</span>
       </div>
     </div>
   </div>

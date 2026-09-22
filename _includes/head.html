@@ -52,17 +52,6 @@
 })();
 </script>
 
-<!-- Language: applied before paint to prevent FOUC; default is English -->
-<script>
-(function() {
-  try {
-    if (localStorage.getItem('lang') === 'zh') {
-      document.documentElement.setAttribute('data-lang', 'zh');
-    }
-  } catch (e) {}
-})();
-</script>
-
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css?v=20260922e">
 
