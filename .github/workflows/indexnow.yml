@@ -1,0 +1,31 @@
+name: IndexNow Ping
+
+# Ping Bing's IndexNow endpoint after every deploy so new/updated pages
+# are crawled immediately instead of waiting for the next scheduled crawl.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for GitHub Pages deploy
+        run: sleep 120
+
+      - name: Fetch sitemap and ping IndexNow
+        env:
+          INDEXNOW_KEY: d3e4505e543c461c8497297cb033a273
+          SITE_HOST: chemphyswang.github.io
+        run: |
+          URLS_JSON=$(curl -sf "https://${SITE_HOST}/sitemap.xml" \
+            | grep -oP '(?<=<loc>)[^<]+' | jq -R . | jq -s .)
+          echo "URLs to submit: $URLS_JSON"
+          curl -sS -X POST "https://www.bing.com/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"${SITE_HOST}\",\"key\":\"${INDEXNOW_KEY}\",\"keyLocation\":\"https://${SITE_HOST}/${INDEXNOW_KEY}.txt\",\"urlList\":${URLS_JSON}}"
