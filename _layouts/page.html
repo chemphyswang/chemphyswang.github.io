@@ -616,12 +616,12 @@
       <div class="header-bottom">
         <nav class="header-nav" role="navigation" aria-label="Primary" itemscope itemtype="http://schema.org/SiteNavigationElement">
           {% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
-          <a href="{{ site.url }}/"{% if url == '/' %} class="is-current"{% endif %}>Home</a>
-          <a href="{{ site.url }}/news/"{% if url == '/news/' %} class="is-current"{% endif %}>News</a>
+          <a href="{{ site.url }}/"{% if url == '/' %} class="is-current"{% endif %}><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+          <a href="{{ site.url }}/news/"{% if url == '/news/' %} class="is-current"{% endif %}><span class="lang-en">News</span><span class="lang-zh">新闻动态</span></a>
           <span class="nav-dropdown">
-            <a href="{{ site.url }}/publications/"{% if url == '/publications/' %} class="is-current"{% endif %}>Publications</a>
+            <a href="{{ site.url }}/publications/"{% if url == '/publications/' %} class="is-current"{% endif %}><span class="lang-en">Publications</span><span class="lang-zh">研究成果</span></a>
             <span class="nav-dropdown-menu" role="menu">
-              <a href="{{ site.url }}/publications/" class="nav-dropdown-all">All</a>
+              <a href="{{ site.url }}/publications/" class="nav-dropdown-all"><span class="lang-en">All</span><span class="lang-zh">全部</span></a>
               <a href="{{ site.url }}/publications/#year-2026">2026</a>
               <a href="{{ site.url }}/publications/#year-2025">2025</a>
               <a href="{{ site.url }}/publications/#year-2024">2024</a>
@@ -635,8 +635,9 @@
               <a href="{{ site.url }}/publications/#year-2016">2016</a>
             </span>
           </span>
-          <a href="{{ site.url }}/hobbies/"{% if url == '/hobbies/' %} class="is-current"{% endif %}>Beyond Research</a>
-          <a href="{{ site.url }}/contact/"{% if url == '/contact/' %} class="is-current"{% endif %}>Contact Us</a>
+          <a href="{{ site.url }}/hobbies/"{% if url == '/hobbies/' %} class="is-current"{% endif %}><span class="lang-en">Beyond Research</span><span class="lang-zh">科研之外</span></a>
+          <a href="{{ site.url }}/contact/"{% if url == '/contact/' %} class="is-current"{% endif %}><span class="lang-en">Contact Us</span><span class="lang-zh">联系我们</span></a>
+          <a href="#" id="langToggle" class="lang-toggle" role="button" aria-label="Switch language 切换语言"><span class="lang-en">中文</span><span class="lang-zh">EN</span></a>
         </nav>
       </div>
 
@@ -761,6 +762,26 @@
         panel.classList.remove('open');
         btn.classList.remove('active');
         btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+  </script>
+
+  <!-- Language toggle: swaps html[data-lang] and persists the choice;
+       default (no attribute / no stored value) is English -->
+  <script>
+  (function() {
+    var toggle = document.getElementById('langToggle');
+    if (!toggle) return;
+    toggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      var isZh = document.documentElement.getAttribute('data-lang') === 'zh';
+      if (isZh) {
+        document.documentElement.removeAttribute('data-lang');
+        try { localStorage.setItem('lang', 'en'); } catch (err) {}
+      } else {
+        document.documentElement.setAttribute('data-lang', 'zh');
+        try { localStorage.setItem('lang', 'zh'); } catch (err) {}
       }
     });
   })();

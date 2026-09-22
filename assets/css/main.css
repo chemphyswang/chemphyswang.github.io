@@ -5267,3 +5267,42 @@ hr {
 [data-theme="dark"] .scholar-icon {
   color: #6ea8ff;
 }
+
+/* ============================================
+   Bilingual EN/中文 switch
+   Content pairs are tagged .lang-en / .lang-zh; the toggle sets
+   html[data-lang="zh"]. Default (no attribute) is English.
+   ============================================ */
+.lang-zh {
+  display: none;
+}
+html[data-lang="zh"] .lang-en {
+  display: none;
+}
+html[data-lang="zh"] .lang-zh {
+  display: block;
+}
+/* Inline-level Chinese alternates keep inline flow when revealed */
+html[data-lang="zh"] span.lang-zh,
+html[data-lang="zh"] a.lang-zh,
+html[data-lang="zh"] em.lang-zh,
+html[data-lang="zh"] strong.lang-zh,
+html[data-lang="zh"] i.lang-zh {
+  display: inline;
+}
+html[data-lang="zh"] li.lang-zh {
+  display: list-item;
+}
+
+/* Language toggle tab (last item in the header nav) */
+.lang-toggle {
+  cursor: pointer;
+}
+
+/* The theme pulls consecutive paragraphs together (p + p => margin-top: -1.5em).
+   When the English twin is display:none, the Chinese paragraph still matches
+   that selector and rides up over the preceding heading (contact page address).
+   Neutralize it for ZH paragraphs that directly follow their EN twin. */
+.article-wrap p.lang-en + p.lang-zh {
+  margin-top: 0;
+}
