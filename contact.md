@@ -18,7 +18,7 @@ Haidian District, Beijing 100081, China
 {: .lang-en}
 
 王涛 博士，副教授<br>
-材料科学与工程学院<br>
+材料学院<br>
 五号教学楼 322 室<br>
 北京理工大学<br>
 中国北京市海淀区，邮编 100081
