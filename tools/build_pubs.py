@@ -262,6 +262,7 @@ FIGURE_BY_DOI = {
     '10.1002/ADMA.202521092': ('adv-mater-2026.png', 'Adv Mater 2026'),
     '10.1007/s11426-025-3385-5': ('sci-china-chem-2026.png', 'Sci China Chem 2026'),
     '10.1021/acsnano.6c00162': ('acs-nano-2026.png', 'ACS Nano 2026'),
+    '10.1016/j.microc.2026.119166': ('microc-j-2026.jpg', 'Microchem J 2026'),
 }
 
 full = [STYLE, '', '<div class="pub-list">']
