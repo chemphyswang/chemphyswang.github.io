@@ -1485,8 +1485,8 @@ html {
   text-transform: uppercase;
 }
 .article-wrap h2 {
-  font-size: 36px;
-  font-size: 2rem;
+  font-size: 31px;
+  font-size: 1.7rem;
   margin-bottom: 0.825rem;
 }
 .article-wrap h3 {
@@ -5032,6 +5032,13 @@ h1, h2, h3, h4, h5, h6,
 [data-theme="dark"] .article-wrap h3, [data-theme="dark"] .article-wrap h4,
 [data-theme="dark"] .article-wrap h5, [data-theme="dark"] .article-wrap h6 {
   color: #eef1f7;
+}
+
+/* Chinese headings: Microsoft YaHei reads better than the serif display face */
+.article-wrap h1.lang-zh, .article-wrap h2.lang-zh, .article-wrap h3.lang-zh,
+.article-wrap h4.lang-zh, .article-wrap h5.lang-zh, .article-wrap h6.lang-zh {
+  font-family: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", sans-serif;
+  letter-spacing: 0.02em;
 }
 body,
 .article-wrap,
