@@ -41,9 +41,9 @@ Tao Wang is currently an associate professor in the School of Materials Science 
 - Exploration of Applications for Optoelectronic Materials
 {: .lang-en}
 
-- 室温磷光材料的设计
-- 热活化延迟荧光材料的设计
-- 光电材料应用的探索
+- 室温磷光材料设计
+- 热激活延迟荧光材料设计
+- 光电材料应用探索
 {: .lang-zh}
 
 ## Work Experience and Education

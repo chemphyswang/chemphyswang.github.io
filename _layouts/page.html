@@ -767,12 +767,10 @@
   })();
   </script>
 
-  <!-- Language toggle: swaps html[data-lang] for the current page view only.
-       Every visit starts in English (no persistence); any stale stored
-       preference from earlier versions is cleared on load. -->
+  <!-- Language toggle: swaps html[data-lang] and persists the choice;
+       default (no attribute / no stored value) is English -->
   <script>
   (function() {
-    try { localStorage.removeItem('lang'); } catch (err) {}
     var toggle = document.getElementById('langToggle');
     if (!toggle) return;
     toggle.addEventListener('click', function(e) {
@@ -780,8 +778,10 @@
       var isZh = document.documentElement.getAttribute('data-lang') === 'zh';
       if (isZh) {
         document.documentElement.removeAttribute('data-lang');
+        try { localStorage.setItem('lang', 'en'); } catch (err) {}
       } else {
         document.documentElement.setAttribute('data-lang', 'zh');
+        try { localStorage.setItem('lang', 'zh'); } catch (err) {}
       }
     });
   })();
