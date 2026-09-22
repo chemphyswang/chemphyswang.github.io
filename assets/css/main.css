@@ -5025,6 +5025,9 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: 0;
   color: #011f5b; /* Penn blue */
 }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
 /* Penn blue is too dark on the dark background — keep dark headings readable */
 [data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3,
 [data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6,
