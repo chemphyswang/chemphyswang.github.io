@@ -125,7 +125,7 @@ Tao Wang is currently an associate professor in the School of Materials Science 
         <span class="timeline-time"><span class="lang-en">Sep. 2014 - Jun. 2019</span><span class="lang-zh">2014年9月 - 2019年6月</span></span>
       </div>
       <div class="timeline-details">
-        <span class="lang-en">Hefei, China · Supervisors: Prof. Guoqing Zhang and Prof. Xingyuan Zhang</span><span class="lang-zh">中国安徽合肥 · 导师：张国庆教授、张兴元教授</span>
+        <span class="lang-en">Hefei, China · Supervisors: Prof. Guoqing Zhang and Prof. Xingyuan Zhang</span><span class="lang-zh">中国合肥 · 导师：张国庆教授、张兴元教授</span>
       </div>
     </div>
   </div>
@@ -140,7 +140,7 @@ Tao Wang is currently an associate professor in the School of Materials Science 
         <span class="timeline-time"><span class="lang-en">Sep. 2010 - Jul. 2014</span><span class="lang-zh">2010年9月 - 2014年7月</span></span>
       </div>
       <div class="timeline-details">
-        <span class="lang-en">Hefei, China</span><span class="lang-zh">中国安徽合肥</span>
+        <span class="lang-en">Hefei, China</span><span class="lang-zh">中国合肥</span>
       </div>
     </div>
   </div>
