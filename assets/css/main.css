@@ -5321,3 +5321,145 @@ html[data-lang="zh"] li.lang-zh {
 .article-wrap :is(h1, h2, h3, h4, h5, h6) + p.lang-en + p.lang-zh {
   margin-top: 0;
 }
+
+/* ============================================
+   Header share dropdown (SHARE A LINK)
+   ============================================ */
+.share-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.share-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.share-menu,
+.share-qr-panel {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 210px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  z-index: 1250;
+  overflow: hidden;
+}
+.share-dropdown.open .share-menu {
+  display: block;
+}
+.share-dropdown.open.show-qr .share-menu {
+  display: none;
+}
+.share-dropdown.open.show-qr .share-qr-panel {
+  display: block;
+}
+
+.share-menu-header {
+  padding: 10px 16px 8px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.share-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 11px 16px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333332;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.share-menu-item:last-child {
+  border-bottom: 0;
+}
+.share-menu-item svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  color: #011f5b;
+}
+.share-menu-item:hover {
+  background: rgba(1, 31, 91, 0.05);
+  color: #011f5b;
+}
+
+.share-qr-panel {
+  padding: 16px 14px 12px;
+  text-align: center;
+}
+.share-qr-panel img {
+  display: block;
+  margin: 0 auto 10px;
+  border: 0;
+  background: #ffffff;
+}
+.share-qr-panel p {
+  margin: 0 0 8px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12.5px;
+  color: #666;
+  line-height: 1.4;
+}
+.share-qr-back {
+  background: none;
+  border: 0;
+  padding: 4px 8px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #011f5b;
+  cursor: pointer;
+}
+.share-qr-back:hover {
+  color: #990000;
+}
+
+[data-theme="dark"] .share-menu,
+[data-theme="dark"] .share-qr-panel {
+  background: #1c1c22;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+[data-theme="dark"] .share-menu-header {
+  color: #8a8a93;
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+[data-theme="dark"] .share-menu-item {
+  color: #d4d4dc;
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+[data-theme="dark"] .share-menu-item svg {
+  color: #6ea8ff;
+}
+[data-theme="dark"] .share-menu-item:hover {
+  background: rgba(110, 168, 255, 0.1);
+  color: #ffffff;
+}
+[data-theme="dark"] .share-qr-panel p {
+  color: #a9a9b3;
+}
+[data-theme="dark"] .share-qr-back {
+  color: #6ea8ff;
+}
+[data-theme="dark"] .share-qr-back:hover {
+  color: #e5484d;
+}
