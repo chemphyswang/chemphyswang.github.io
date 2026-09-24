@@ -52,11 +52,13 @@
 })();
 </script>
 
-<!-- Language: applied before paint to prevent FOUC; default is English -->
+<!-- Language: applied before paint to prevent FOUC. sessionStorage keeps the
+     choice across reloads/navigation within this tab only; a new window or
+     tab always starts in English. -->
 <script>
 (function() {
   try {
-    if (localStorage.getItem('lang') === 'zh') {
+    if (sessionStorage.getItem('lang') === 'zh') {
       document.documentElement.setAttribute('data-lang', 'zh');
     }
   } catch (e) {}

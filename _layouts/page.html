@@ -767,8 +767,9 @@
   })();
   </script>
 
-  <!-- Language toggle: swaps html[data-lang] and persists the choice;
-       default (no attribute / no stored value) is English -->
+  <!-- Language toggle: swaps html[data-lang] and remembers the choice for
+       this tab session only (sessionStorage). Reloads and in-site navigation
+       keep the language; closing the window/tab resets to English. -->
   <script>
   (function() {
     var toggle = document.getElementById('langToggle');
@@ -778,10 +779,10 @@
       var isZh = document.documentElement.getAttribute('data-lang') === 'zh';
       if (isZh) {
         document.documentElement.removeAttribute('data-lang');
-        try { localStorage.setItem('lang', 'en'); } catch (err) {}
+        try { sessionStorage.setItem('lang', 'en'); } catch (err) {}
       } else {
         document.documentElement.setAttribute('data-lang', 'zh');
-        try { localStorage.setItem('lang', 'zh'); } catch (err) {}
+        try { sessionStorage.setItem('lang', 'zh'); } catch (err) {}
       }
     });
   })();
