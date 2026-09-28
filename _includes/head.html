@@ -18,7 +18,18 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:site_name" content="Tao Wang Research Group">
+
+<!-- Google site name in search results (WebSite structured data) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Tao Wang Research Group",
+  "alternateName": ["Tao Wang Group", "王涛课题组"],
+  "url": "{{ site.url }}/"
+}
+</script>
 
 {% if site.google_verify %}<!-- Webmaster Tools verfication -->
 <meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
