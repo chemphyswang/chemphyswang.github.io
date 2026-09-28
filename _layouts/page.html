@@ -685,6 +685,7 @@
         <nav class="header-nav" role="navigation" aria-label="Primary" itemscope itemtype="http://schema.org/SiteNavigationElement">
           {% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
           <a href="{{ site.url }}/"{% if url == '/' %} class="is-current"{% endif %}><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+          <a href="{{ site.url }}/about/"{% if url == '/about/' %} class="is-current"{% endif %}><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
           <a href="{{ site.url }}/news/"{% if url == '/news/' %} class="is-current"{% endif %}><span class="lang-en">News</span><span class="lang-zh">新闻动态</span></a>
           <span class="nav-dropdown">
             <a href="{{ site.url }}/publications/"{% if url == '/publications/' %} class="is-current"{% endif %}><span class="lang-en">Publications</span><span class="lang-zh">研究成果</span></a>
