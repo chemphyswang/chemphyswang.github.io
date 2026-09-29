@@ -615,12 +615,12 @@
         <!-- Mobile avatar with expandable contact menu (mobile portrait only) -->
         <div class="mobile-avatar-wrapper">
           <button class="mobile-avatar-btn" aria-label="Toggle contact info" aria-expanded="false">
-            <img src="{{ site.url }}/images/{{ site.owner.avatar }}"
+            <img src="{{ site.baseurl }}/images/{{ site.owner.avatar }}"
                  alt="{{ site.owner.name }}" class="mobile-avatar-img">
           </button>
         </div>
 
-        <a class="header-logo" href="{{ site.url }}" aria-label="{{ site.owner.name }}">
+        <a class="header-logo" href="{{ site.baseurl }}/" aria-label="{{ site.owner.name }}">
           <img src="/images/logo/bit-logo2.png" class="logo logo--light" alt="Beijing Institute of Technology">
           <img src="/images/logo/bit-logo2-dark.png" class="logo logo--dark" alt="Beijing Institute of Technology">
         </a>
@@ -646,7 +646,7 @@
                 <button type="button" class="share-menu-item share-wechat-btn" role="menuitem"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 1 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.406-.032zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/></svg><span>WeChat</span></button>
               </div>
               <div class="share-qr-panel">
-                <img src="{{ site.url }}/images/qr-home.png" alt="WeChat QR code 微信二维码" width="150" height="150">
+                <img src="{{ site.baseurl }}/images/qr-home.png" alt="WeChat QR code 微信二维码" width="150" height="150">
                 <p><span class="lang-en">Scan with WeChat to share the homepage</span><span class="lang-zh">微信扫一扫，分享主页</span></p>
                 <button type="button" class="share-qr-back"><span class="lang-en">&larr; Back</span><span class="lang-zh">&larr; 返回</span></button>
               </div>
@@ -675,7 +675,7 @@
             </label>
           </div>
           <span class="header-avatar" title="{{ site.owner.name }}">
-            <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }}">
+            <img src="{{ site.baseurl }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }}">
           </span>
         </div>
       </div>
@@ -684,28 +684,28 @@
       <div class="header-bottom">
         <nav class="header-nav" role="navigation" aria-label="Primary" itemscope itemtype="http://schema.org/SiteNavigationElement">
           {% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
-          <a href="{{ site.url }}/"{% if url == '/' %} class="is-current"{% endif %}><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
-          <a href="{{ site.url }}/about/"{% if url == '/about/' %} class="is-current"{% endif %}><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
-          <a href="{{ site.url }}/news/"{% if url == '/news/' %} class="is-current"{% endif %}><span class="lang-en">News</span><span class="lang-zh">新闻动态</span></a>
+          <a href="{{ site.baseurl }}/"{% if url == '/' %} class="is-current"{% endif %}><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+          <a href="{{ site.baseurl }}/about/"{% if url == '/about/' %} class="is-current"{% endif %}><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
+          <a href="{{ site.baseurl }}/news/"{% if url == '/news/' %} class="is-current"{% endif %}><span class="lang-en">News</span><span class="lang-zh">新闻动态</span></a>
           <span class="nav-dropdown">
-            <a href="{{ site.url }}/publications/"{% if url == '/publications/' %} class="is-current"{% endif %}><span class="lang-en">Publications</span><span class="lang-zh">研究成果</span></a>
+            <a href="{{ site.baseurl }}/publications/"{% if url == '/publications/' %} class="is-current"{% endif %}><span class="lang-en">Publications</span><span class="lang-zh">研究成果</span></a>
             <span class="nav-dropdown-menu" role="menu">
-              <a href="{{ site.url }}/publications/" class="nav-dropdown-all"><span class="lang-en">All</span><span class="lang-zh">全部</span></a>
-              <a href="{{ site.url }}/publications/#year-2026">2026</a>
-              <a href="{{ site.url }}/publications/#year-2025">2025</a>
-              <a href="{{ site.url }}/publications/#year-2024">2024</a>
-              <a href="{{ site.url }}/publications/#year-2023">2023</a>
-              <a href="{{ site.url }}/publications/#year-2022">2022</a>
-              <a href="{{ site.url }}/publications/#year-2021">2021</a>
-              <a href="{{ site.url }}/publications/#year-2020">2020</a>
-              <a href="{{ site.url }}/publications/#year-2019">2019</a>
-              <a href="{{ site.url }}/publications/#year-2018">2018</a>
-              <a href="{{ site.url }}/publications/#year-2017">2017</a>
-              <a href="{{ site.url }}/publications/#year-2016">2016</a>
+              <a href="{{ site.baseurl }}/publications/" class="nav-dropdown-all"><span class="lang-en">All</span><span class="lang-zh">全部</span></a>
+              <a href="{{ site.baseurl }}/publications/#year-2026">2026</a>
+              <a href="{{ site.baseurl }}/publications/#year-2025">2025</a>
+              <a href="{{ site.baseurl }}/publications/#year-2024">2024</a>
+              <a href="{{ site.baseurl }}/publications/#year-2023">2023</a>
+              <a href="{{ site.baseurl }}/publications/#year-2022">2022</a>
+              <a href="{{ site.baseurl }}/publications/#year-2021">2021</a>
+              <a href="{{ site.baseurl }}/publications/#year-2020">2020</a>
+              <a href="{{ site.baseurl }}/publications/#year-2019">2019</a>
+              <a href="{{ site.baseurl }}/publications/#year-2018">2018</a>
+              <a href="{{ site.baseurl }}/publications/#year-2017">2017</a>
+              <a href="{{ site.baseurl }}/publications/#year-2016">2016</a>
             </span>
           </span>
-          <a href="{{ site.url }}/hobbies/"{% if url == '/hobbies/' %} class="is-current"{% endif %}><span class="lang-en">Beyond Research</span><span class="lang-zh">科研之外</span></a>
-          <a href="{{ site.url }}/contact/"{% if url == '/contact/' %} class="is-current"{% endif %}><span class="lang-en">Contact Us</span><span class="lang-zh">联系我们</span></a>
+          <a href="{{ site.baseurl }}/hobbies/"{% if url == '/hobbies/' %} class="is-current"{% endif %}><span class="lang-en">Beyond Research</span><span class="lang-zh">科研之外</span></a>
+          <a href="{{ site.baseurl }}/contact/"{% if url == '/contact/' %} class="is-current"{% endif %}><span class="lang-en">Contact Us</span><span class="lang-zh">联系我们</span></a>
           <a href="#" id="langToggle" class="lang-toggle" role="button" aria-label="Switch language 切换语言"><span class="lang-en">中文</span><span class="lang-zh">EN</span></a>
         </nav>
       </div>
@@ -716,7 +716,7 @@
 
   <!-- 其他内容保持不变 -->
   {% if page.image.feature %}<div class="image-wrap">
-    <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+    <img src="{{ site.baseurl }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
   </div>{% endif %}
 
   <div id="main" role="main" itemprop="mainContentOfPage">
@@ -797,7 +797,7 @@
         </button>
       </div>
       <div class="mobile-share-qr" id="mobileShareQr">
-        <img src="{{ site.url }}/images/qr-home.png" alt="WeChat QR code 微信二维码" width="140" height="140">
+        <img src="{{ site.baseurl }}/images/qr-home.png" alt="WeChat QR code 微信二维码" width="140" height="140">
         <p><span class="lang-en">Scan with WeChat to share the homepage</span><span class="lang-zh">微信扫一扫，分享主页</span></p>
         <button type="button" class="mobile-share-qr-back" id="mobileShareQrBack"><span class="lang-en">&larr; Back</span><span class="lang-zh">&larr; 返回</span></button>
       </div>
