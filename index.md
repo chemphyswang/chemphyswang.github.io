@@ -28,3 +28,7 @@ Tao Wang's group works at the interface of molecular design and photophysics to 
 {: .lang-zh}
 
 {% include recent-publications.html %}
+
+<div class="hobby-quote">
+<strong class="quote-text">An experiment is a question which Science poses to Nature and a measurement is the recording of Nature's answer. -- Max Planck</strong>
+</div>
