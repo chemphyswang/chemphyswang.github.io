@@ -3967,7 +3967,7 @@ a.cover-badge:hover,
 
 .hobby-quote {
   font-style: italic;
-  font-size: 1.15em;
+  font-size: 1.035em;
   line-height: 1.7;
   color: #666666;
   text-align: center;
@@ -4132,7 +4132,7 @@ a.cover-badge:hover,
     padding: 24px 20px;
     margin-bottom: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    font-size: 0.85em;
+    font-size: 0.765em;
     line-height: 1.5;
     text-align: center;
     border-left: none;
