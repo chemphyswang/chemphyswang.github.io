@@ -5463,3 +5463,244 @@ html[data-lang="zh"] li.lang-zh {
 [data-theme="dark"] .share-qr-back:hover {
   color: #e5484d;
 }
+
+/* Banner rotator: two banners alternate with a right-to-left dissolve-wipe, each shown ~1.8s */
+.banner-rotator {
+  position: relative;
+}
+.banner-rotator img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.banner-rotator img.banner-alt {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 0 0 100%);
+  opacity: 0;
+  animation: banner-wipe 5.6s ease-in-out infinite;
+}
+@keyframes banner-wipe {
+  0%, 32% { clip-path: inset(0 0 0 100%); opacity: 0; }
+  50%, 82% { clip-path: inset(0 0 0 0); opacity: 1; }
+  100% { clip-path: inset(0 100% 0 0); opacity: 0; }
+}
+
+/* ============ Photo album (Beyond Research) ============ */
+.album {
+  margin: 0 0 2.5em;
+}
+
+/* Stacked cover: hints there is more than one photo */
+.album-stack {
+  position: relative;
+  width: min(448px, 92%);
+  margin: 1.4em auto 2em;
+  cursor: pointer;
+  outline: none;
+}
+.album-stack .stack-layer,
+.album-stack .stack-cover {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+.album-stack .stack-layer img,
+.album-stack .stack-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.stack-layer {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.stack-l2 {
+  transform: rotate(-3deg) translate(-8px, 6px);
+  z-index: 1;
+}
+.stack-l3 {
+  transform: rotate(2.5deg) translate(8px, 10px);
+  z-index: 0;
+}
+.stack-cover {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.album-stack:hover .stack-cover,
+.album-stack:focus-visible .stack-cover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+.album-stack:hover .stack-l2 {
+  transform: rotate(-5deg) translate(-14px, 8px);
+}
+.album-stack:hover .stack-l3 {
+  transform: rotate(4deg) translate(14px, 14px);
+}
+.album-badge {
+  position: absolute;
+  z-index: 3;
+  right: 12px;
+  bottom: 12px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 0.35em 0.8em;
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+/* Expanded grid: 3 per row, uniform height, width follows each photo's aspect */
+.album-grid {
+  display: none;
+}
+.album-grid.open {
+  display: block;
+  animation: fadeInUp 0.5s ease-out;
+}
+.album-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.album-row:last-child {
+  margin-bottom: 0;
+}
+.album-photo {
+  height: 240px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.album-photo:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.album-photo a {
+  display: block;
+  height: 100%;
+}
+.album-photo img {
+  height: 100%;
+  width: auto;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.album-photo:hover img {
+  transform: scale(1.03);
+}
+@media (max-width: 1024px) {
+  .album-photo {
+    height: 200px;
+  }
+}
+@media (max-width: 640px) {
+  .album-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .album-photo {
+    height: auto;
+    width: 100%;
+  }
+  .album-photo img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* News activity tag */
+.news-tag--activity {
+  color: #d97706;
+}
+.news-tag--activity::before {
+  background: #d97706;
+}
+[data-theme="dark"] .news-tag--activity {
+  color: #fbbf24;
+}
+[data-theme="dark"] .news-tag--activity::before {
+  background: #fbbf24;
+}
+
+/* Lightbox close button: prominent, pinned to the viewport's top-right corner */
+.mfp-image-holder .mfp-close {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  line-height: 42px;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  color: #ffffff;
+  font-size: 26px;
+  opacity: 1;
+  transition: background 0.2s ease;
+}
+.mfp-image-holder .mfp-close:hover,
+.mfp-image-holder .mfp-close:focus {
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+.mfp-image-holder .mfp-close:active {
+  top: 16px;
+}
+
+/* Album badge: swap label when the gallery is expanded */
+.album-badge .badge-close {
+  display: none;
+}
+.album-stack.open .badge-open {
+  display: none;
+}
+.album-stack.open .badge-close {
+  display: inline;
+}
+
+/* Chinese headings: bump to a true bold so they match the visual weight
+   of their English twins (YaHei/PingFang render 600 too thin) */
+.article-wrap h1.lang-zh, .article-wrap h2.lang-zh, .article-wrap h3.lang-zh,
+.article-wrap h4.lang-zh, .article-wrap h5.lang-zh, .article-wrap h6.lang-zh {
+  font-weight: 700;
+}
+
+/* Section headings (Research Overview etc.): 10% smaller */
+.article-wrap h2 {
+  font-size: 27.9px;
+  font-size: 1.53rem;
+}
+
+/* Lightbox above the sticky glass header (header z-index: 1000) so neither
+   the photo nor the close button hides behind the nav bar */
+.mfp-bg {
+  z-index: 1500;
+}
+.mfp-wrap {
+  z-index: 1501;
+}
+
+/* Snappier lightbox close: shorter fade-out, and pause the expensive glass
+   blur behind the popup so the fade doesn't stutter on repaint */
+.mfp-fade.mfp-removing.mfp-bg {
+  transition-duration: 0.1s;
+}
+.mfp-fade.mfp-removing .mfp-content,
+.mfp-fade.mfp-removing .mfp-figure {
+  transition-duration: 0.1s;
+}
+body.lightbox-open .header-sticky-wrapper > .glass-filter {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  filter: none;
+}

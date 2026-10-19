@@ -11,6 +11,14 @@ title: News
 {: .lang-zh}
 
 <div class="news-grid">
+  <div class="news-card news-card--activity">
+    <div class="news-meta">
+      <span class="news-date"><span class="lang-en">October 2026</span><span class="lang-zh">2026年10月</span></span>
+      <span class="news-tag news-tag--activity"><span class="lang-en">Activity</span><span class="lang-zh">活动</span></span>
+    </div>
+    <p><span class="lang-en">Our group, together with Prof. Haizheng Zhong's team, went on a <a href="{{ site.baseurl }}/hobbies/"><strong>hike up the Juyongguan Great Wall</strong></a>.</span><span class="lang-zh">课题组与钟海政教授团队联合开展<a href="{{ site.baseurl }}/hobbies/"><strong>居庸关长城攀登活动</strong></a>。</span></p>
+  </div>
+
   <div class="news-card news-card--milestone">
     <div class="news-meta">
       <span class="news-date"><span class="lang-en">September 2026</span><span class="lang-zh">2026年9月</span></span>

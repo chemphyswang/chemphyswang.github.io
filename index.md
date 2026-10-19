@@ -3,8 +3,10 @@ layout: page
 description: "王涛，北京理工大学，室温磷光，发光材料，TADF, OLED，Tao Wang, RTP, phosphorescence, luminescent Materials, OLED, TADF, Beijing Institute of Technology, BIT"
 ---
 
-<img src="{{ site.baseurl }}/images/banner-home.jpg" alt="Tao Wang Group" style="width:100%;height:auto;display:block;">
-{: style="margin-bottom:0.78em;"}
+<div class="banner-rotator" style="margin-bottom:0.78em;">
+  <img src="{{ site.baseurl }}/images/banner-home.jpg" alt="Tao Wang Group">
+  <img class="banner-alt" src="{{ site.baseurl }}/images/banner-home-2.jpg" alt="Tao Wang Group at Juyongguan Great Wall">
+</div>
 
 ## Research Overview
 {: .lang-en}
