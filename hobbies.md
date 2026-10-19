@@ -68,6 +68,24 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.toggle('lightbox-open', !!document.querySelector('.mfp-bg'));
   });
   mo.observe(document.body, { childList: true });
+
+  // Mobile (<=480px): the site's global script blocks clicks on image links
+  // to disable the lightbox, which leaves album photos dead. Intercept the
+  // events in the capture phase (before that blocker) so a tap opens the
+  // photo directly — the browser's native viewer supports pinch zoom and
+  // the back button returns to the album. Serve the compressed copy on
+  // mobile instead of the multi-MB original.
+  if (window.innerWidth <= 480) {
+    document.querySelectorAll('.album-photo a').forEach(function (a) {
+      a.href = a.href.replace('/full/', '/');
+    });
+    var bypass = function (e) {
+      var a = e.target.closest && e.target.closest('.album-photo a');
+      if (a) e.stopPropagation();
+    };
+    document.addEventListener('click', bypass, true);
+    document.addEventListener('touchstart', bypass, true);
+  }
 });
 </script>
 
