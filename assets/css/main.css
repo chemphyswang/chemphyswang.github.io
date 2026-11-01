@@ -2662,13 +2662,13 @@ img.mfp-img {
     border-radius: 10px;
   }
   .news-date {
-    font-size: 0.74em;
+    font-size: 14px;
   }
   .news-tag {
-    font-size: 0.66em;
+    font-size: 11.5px;
   }
   .news-card p {
-    font-size: 0.9em;
+    font-size: 15px;
     line-height: 1.65;
   }
   .news-card.animate-in:hover {
@@ -3566,7 +3566,7 @@ a.cover-badge:hover,
   }
 
   .publication-title {
-    font-size: 0.88rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -5702,4 +5702,31 @@ body.lightbox-open .header-sticky-wrapper > .glass-filter {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   filter: none;
+}
+
+/* ============================================
+   MOBILE READABILITY PASS (≤768px)
+   Content text +1px; headings untouched because
+   they size in rem off the :root font-size.
+   Lives at the end of the file so it wins the
+   cascade over component rules above.
+   ============================================ */
+@media only screen and (max-width: 768px) {
+  #main {
+    font-size: 15.4px;
+  }
+  .timeline-time {
+    font-size: 0.92rem;
+  }
+  figcaption {
+    font-size: 1.07rem;
+  }
+  .timeline-details {
+    font-size: 0.97rem;
+  }
+  .publication-conference,
+  .publication-details,
+  .album-badge {
+    font-size: 0.87rem;
+  }
 }

@@ -500,7 +500,7 @@
       box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     }
     .header-spacer {
-      height: 108px;
+      height: 114px;
     }
     .header-container {
       padding: 8px 16px 0;
@@ -526,17 +526,13 @@
       margin-top: 6px;
       padding: 8px 0;
       border-top: 1px solid rgba(0, 0, 0, 0.08);
-      overflow-x: auto;
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
+      flex-wrap: wrap;
+      row-gap: 6px;
     }
     .header-nav a {
-      font-size: 13.5px;
+      font-size: 15px;
       letter-spacing: 0.03em;
       white-space: nowrap;
-    }
-    .header-nav::-webkit-scrollbar {
-      display: none;
     }
     .header-nav > a:not(:last-child)::after,
     .header-nav > .nav-dropdown:not(:last-child) > a::after {
@@ -547,7 +543,7 @@
   /* 超小屏幕适配 */
   @media (max-width: 480px) {
     .header-spacer {
-      height: 100px;
+      height: 146px;
     }
     .header-container {
       padding: 8px 14px 0;
@@ -560,7 +556,7 @@
       padding: 7px 0;
     }
     .header-nav a {
-      font-size: 12px;
+      font-size: 15px;
       letter-spacing: 0.03em;
     }
     .header-nav > a:not(:last-child)::after,
@@ -825,9 +821,8 @@
       margin-top: 6px;
       padding: 8px 0;
       border-top: 1px solid rgba(0, 0, 0, 0.08);
-      overflow-x: auto;
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
+      flex-wrap: wrap;
+      row-gap: 6px;
     }
   }
 
