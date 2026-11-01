@@ -138,7 +138,7 @@
   }
   .logo {
     width: auto;
-    height: 72px;
+    height: 65px;
     flex-shrink: 0;
     display: block;
   }
@@ -173,7 +173,7 @@
   .header-nav a {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16.5px;
     letter-spacing: 0.02em;
     color: #333332;
     text-decoration: none;
@@ -185,7 +185,7 @@
   .header-nav > a:not(:last-child)::after,
   .header-nav > .nav-dropdown:not(:last-child) > a::after {
     content: "/";
-    margin: 0 14px;
+    margin: 0 16px;
     color: rgba(0, 0, 0, 0.28);
     font-weight: 400;
   }
@@ -420,6 +420,84 @@
     border-color: rgba(255, 255, 255, 0.5);
   }
 
+  /* ============================================
+     Header theme toggle: pill style like En/中文
+     (overrides main.css .switch chrome, header only)
+     ============================================ */
+  .theme-toggle-wrapper--header {
+    font-size: 18px;
+    margin-right: 0;
+    margin-left: 0;
+    --trans-dur: 0.3s;
+  }
+  .theme-toggle-wrapper--header input.switch__input {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    width: 2.6em;
+    height: 1.35em;
+  }
+  .theme-toggle-wrapper--header input.switch__input:checked {
+    background-color: transparent;
+  }
+  .theme-toggle-wrapper--header .switch__inner,
+  .theme-toggle-wrapper--header .switch__inner-icons {
+    top: 0.225em;
+    left: 0.225em;
+    width: 1.9em;
+    height: 0.9em;
+  }
+  .theme-toggle-wrapper--header .switch__inner:before,
+  .theme-toggle-wrapper--header .switch__inner-icons {
+    transform: translateX(-1.15em);
+  }
+  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner:before,
+  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner-icons {
+    transform: translateX(1.15em);
+  }
+  .theme-toggle-wrapper--header .switch__inner:before {
+    background-color: #990000;
+  }
+  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner:before {
+    background-color: #990000;
+  }
+  .theme-toggle-wrapper--header .switch__inner-icons .switch__icon {
+    color: #ffffff;
+    top: 0.1em;
+    left: 0.1em;
+    width: 0.7em;
+    height: 0.7em;
+    transform: translateX(1.15em);
+  }
+  .theme-toggle-wrapper--header .switch__inner-icons .switch__icon:nth-child(2) {
+    right: 0.1em;
+  }
+  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner-icons .switch__icon:first-of-type {
+    transform: translateX(-1.15em) rotate(-360deg);
+  }
+  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner-icons .switch__icon:nth-of-type(2) {
+    transform: translateX(-1.15em) rotate(360deg);
+  }
+  .theme-toggle-wrapper--header .switch__icon {
+    color: rgba(0, 0, 0, 0.3);
+    top: 0.3em;
+    left: 0.3em;
+    width: 0.75em;
+    height: 0.75em;
+  }
+  .theme-toggle-wrapper--header .switch__icon:nth-of-type(2) {
+    right: 0.3em;
+  }
+  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__icon {
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner-icons .switch__icon {
+    color: #ffffff;
+  }
+  [data-theme="dark"] .theme-toggle-wrapper--header input.switch__input {
+    border-color: rgba(255, 255, 255, 0.28);
+  }
+
   /* 移动端适配 */
   @media (max-width: 768px) {
     .header-sticky-wrapper {
@@ -437,7 +515,7 @@
       padding: 8px 16px 0;
     }
     .logo {
-      height: 54px;
+      height: 49px;
     }
     .header-bottom {
       gap: 14px;
@@ -462,8 +540,8 @@
       -webkit-overflow-scrolling: touch;
     }
     .header-nav a {
-      font-size: 12px;
-      letter-spacing: 0.04em;
+      font-size: 13.5px;
+      letter-spacing: 0.03em;
       white-space: nowrap;
     }
     .header-nav::-webkit-scrollbar {
@@ -484,14 +562,14 @@
       padding: 8px 14px 0;
     }
     .logo {
-      height: 42px;
+      height: 38px;
     }
     .header-bottom {
       gap: 12px;
       padding: 7px 0;
     }
     .header-nav a {
-      font-size: 11px;
+      font-size: 12px;
       letter-spacing: 0.03em;
     }
     .header-nav > a:not(:last-child)::after,
