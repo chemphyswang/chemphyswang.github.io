@@ -538,18 +538,32 @@
 
   /* Hidden by default on all screen sizes */
   .mobile-avatar-wrapper,
-  .mobile-contact-panel {
+  .mobile-contact-panel,
+  .mobile-lang-pill {
     display: none;
   }
 
   /* Only show on mobile portrait (≤480px) */
   @media (max-width: 480px) and (orientation: portrait) {
+    /* Language pill sits next to the mobile avatar; the copy inside
+       the nav row is hidden on phones */
+    .mobile-lang-pill {
+      display: inline-flex;
+      margin-left: 0;
+      margin-right: 8px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+    .header-nav .lang-pill {
+      display: none;
+    }
+
     .mobile-avatar-wrapper {
       display: flex;
       align-items: center;
       flex-shrink: 0;
       margin-left: 8px;
-      margin-right: 6px;
+      margin-right: 8px;
       position: relative;
     }
 
@@ -748,7 +762,8 @@
   /* Ensure avatar stays hidden on landscape mobile */
   @media (orientation: landscape) {
     .mobile-avatar-wrapper,
-    .mobile-contact-panel {
+    .mobile-contact-panel,
+    .mobile-lang-pill {
       display: none !important;
     }
   }
@@ -823,6 +838,13 @@
                  alt="{{ site.owner.name }}" class="mobile-avatar-img">
           </button>
         </div>
+
+        <!-- Language pill next to the mobile avatar (mobile portrait only) -->
+        <button type="button" class="lang-pill mobile-lang-pill" role="switch" aria-label="Switch language 切换语言" aria-checked="false">
+          <span class="lang-pill-thumb" aria-hidden="true"></span>
+          <span class="lang-pill-opt" data-val="en">En</span>
+          <span class="lang-pill-opt" data-val="zh">中文</span>
+        </button>
 
         <a class="header-logo" href="{{ site.baseurl }}/" aria-label="{{ site.owner.name }}">
           <img src="/images/logo/bit-logo2.png" class="logo logo--light" alt="Beijing Institute of Technology">
@@ -1165,29 +1187,33 @@
 
   <!-- Language toggle: swaps html[data-lang] and remembers the choice for
        this tab session only (sessionStorage). Reloads and in-site navigation
-       keep the language; closing the window/tab resets to English. -->
+       keep the language; closing the window/tab resets to English.
+       Two pills share the state: one in the desktop nav, one next to the
+       mobile avatar. -->
   <script>
   (function() {
-    var toggle = document.getElementById('langToggle');
-    if (!toggle) return;
+    var toggles = document.querySelectorAll('.lang-pill');
+    if (!toggles.length) return;
 
     function syncAria() {
       var isZh = document.documentElement.getAttribute('data-lang') === 'zh';
-      toggle.setAttribute('aria-checked', isZh ? 'true' : 'false');
+      toggles.forEach(function(t) { t.setAttribute('aria-checked', isZh ? 'true' : 'false'); });
     }
     syncAria();
 
-    toggle.addEventListener('click', function(e) {
-      e.preventDefault();
-      var isZh = document.documentElement.getAttribute('data-lang') === 'zh';
-      if (isZh) {
-        document.documentElement.removeAttribute('data-lang');
-        try { sessionStorage.setItem('lang', 'en'); } catch (err) {}
-      } else {
-        document.documentElement.setAttribute('data-lang', 'zh');
-        try { sessionStorage.setItem('lang', 'zh'); } catch (err) {}
-      }
-      syncAria();
+    toggles.forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        var isZh = document.documentElement.getAttribute('data-lang') === 'zh';
+        if (isZh) {
+          document.documentElement.removeAttribute('data-lang');
+          try { sessionStorage.setItem('lang', 'en'); } catch (err) {}
+        } else {
+          document.documentElement.setAttribute('data-lang', 'zh');
+          try { sessionStorage.setItem('lang', 'zh'); } catch (err) {}
+        }
+        syncAria();
+      });
     });
   })();
   </script>
