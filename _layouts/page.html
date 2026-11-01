@@ -215,6 +215,31 @@
     padding: 0;
     cursor: pointer;
     transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    animation: avatarGlowPulse 2.4s ease-in-out infinite;
+  }
+
+  /* Breathing glow: draws the eye to the clickable avatar.
+     Paused on hover/active (red glow takes over) and in dark mode the
+     same keyframes drive the lighter blue ring. */
+  @keyframes avatarGlowPulse {
+    0%, 100% {
+      border-color: rgba(1, 31, 91, 0.35);
+      box-shadow: 0 0 0 3px rgba(1, 31, 91, 0.08);
+    }
+    50% {
+      border-color: rgba(1, 31, 91, 0.75);
+      box-shadow: 0 0 0 3px rgba(1, 31, 91, 0.26);
+    }
+  }
+  .header-avatar-btn:hover,
+  .header-avatar-btn.active {
+    animation: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .header-avatar-btn {
+      animation: none;
+    }
   }
   .header-avatar-btn:hover,
   .header-avatar-btn.active {
@@ -358,8 +383,17 @@
     color: #6ea8ff;
   }
   [data-theme="dark"] .header-avatar-btn {
-    border-color: rgba(110, 168, 255, 0.5);
-    box-shadow: 0 0 0 3px rgba(110, 168, 255, 0.16);
+    animation-name: avatarGlowPulseDark;
+  }
+  @keyframes avatarGlowPulseDark {
+    0%, 100% {
+      border-color: rgba(110, 168, 255, 0.4);
+      box-shadow: 0 0 0 3px rgba(110, 168, 255, 0.10);
+    }
+    50% {
+      border-color: rgba(110, 168, 255, 0.9);
+      box-shadow: 0 0 0 3px rgba(110, 168, 255, 0.30);
+    }
   }
 
   /* ============================================
