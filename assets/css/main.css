@@ -2760,13 +2760,13 @@ img.mfp-img {
 /* Logo dot on the timeline */
 .timeline-dot {
   position: absolute;
-  left: -72px;
+  left: -65px;
   top: 12px;
-  width: 74px;
-  height: 74px;
+  width: 59px;
+  height: 59px;
   border-radius: 50%;
   background: #343434;
-  border: 3px solid #e0e0e0;
+  border: 2px solid #e0e0e0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2782,16 +2782,16 @@ img.mfp-img {
 }
 
 .timeline-dot img {
-  max-width: 48px;
-  max-height: 48px;
+  max-width: 38px;
+  max-height: 38px;
   width: auto;
   height: auto;
   object-fit: contain;
 }
 
 .timeline-dot img.logo-lg {
-  max-width: 64px;
-  max-height: 64px;
+  max-width: 51px;
+  max-height: 51px;
 }
 
 /* Glow effect when in view */
@@ -2818,14 +2818,13 @@ img.mfp-img {
   box-shadow: 0 12px 28px -14px rgba(1, 31, 91, 0.2);
 }
 
-/* Card header: role + time */
+/* Card header: role on line 1, time on line 2 */
 .timeline-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 2px;
   margin-bottom: 0;
-  flex-wrap: wrap;
 }
 
 .timeline-role {
@@ -2920,20 +2919,20 @@ img.mfp-img {
   }
 
   .timeline-dot {
-    left: -56px;
-    width: 54px;
-    height: 54px;
+    left: -51px;
+    width: 43px;
+    height: 43px;
     border-width: 2px;
   }
 
   .timeline-dot img {
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 24px;
+    max-height: 24px;
   }
 
   .timeline-dot img.logo-lg {
-    max-width: 41px;
-    max-height: 41px;
+    max-width: 33px;
+    max-height: 33px;
   }
 
   .timeline-item {
@@ -2969,20 +2968,20 @@ img.mfp-img {
   }
 
   .timeline-dot {
-    left: -62px;
-    width: 66px;
-    height: 66px;
+    left: -56px;
+    width: 53px;
+    height: 53px;
     font-size: 0.6em;
   }
 
   .timeline-dot img {
-    max-width: 38px;
-    max-height: 38px;
+    max-width: 30px;
+    max-height: 30px;
   }
 
   .timeline-dot img.logo-lg {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 40px;
+    max-height: 40px;
   }
 
   .timeline-card {
@@ -3003,20 +3002,20 @@ img.mfp-img {
   }
 
   .timeline-dot {
-    left: -84px;
-    width: 84px;
-    height: 84px;
+    left: -76px;
+    width: 67px;
+    height: 67px;
     font-size: 0.75em;
   }
 
   .timeline-dot img {
-    max-width: 46px;
-    max-height: 46px;
+    max-width: 37px;
+    max-height: 37px;
   }
 
   .timeline-dot img.logo-lg {
-    max-width: 61px;
-    max-height: 61px;
+    max-width: 49px;
+    max-height: 49px;
   }
 }
 
