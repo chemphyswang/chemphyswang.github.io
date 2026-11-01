@@ -455,6 +455,23 @@
     border-color: rgba(255, 255, 255, 0.5);
   }
 
+  /* Desktop language pill lives in header-actions next to the theme
+     toggle; the generic .lang-pill left margin is not needed there.
+     Order: lang pill · theme toggle · avatar. */
+  .header-actions {
+    align-items: center;
+  }
+  .header-actions .lang-pill {
+    order: 1;
+    margin-left: 0;
+  }
+  .header-actions .theme-toggle-wrapper--header {
+    order: 2;
+  }
+  .header-actions .avatar-dropdown {
+    order: 3;
+  }
+
   /* ============================================
      Header theme toggle: original switch, scaled
      down proportionally (font-size drives all em
@@ -793,6 +810,27 @@
     }
   }
 
+  /* Landscape mobile: keep the mobile contact panel hidden, but show the
+     desktop-style avatar dropdown (top-right). The header lang pill then
+     sits immediately to its left via the flex order set above.
+     Placed after the ≤768px rules so it wins the cascade. */
+  @media (max-width: 768px) and (orientation: landscape) {
+    .avatar-dropdown {
+      display: inline-flex;
+    }
+    .header-nav {
+      order: 10;
+      flex-basis: 100%;
+      margin-left: 0;
+      margin-top: 6px;
+      padding: 8px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
   /* Ensure avatar stays hidden on landscape mobile */
   @media (orientation: landscape) {
     .mobile-avatar-wrapper,
@@ -909,14 +947,15 @@
           </span>
           <a href="{{ site.baseurl }}/hobbies/"{% if url == '/hobbies/' %} class="is-current"{% endif %}><span class="lang-en">Beyond Research</span><span class="lang-zh">科研之外</span></a>
           <a href="{{ site.baseurl }}/contact/"{% if url == '/contact/' %} class="is-current"{% endif %}><span class="lang-en">Contact Us</span><span class="lang-zh">联系我们</span></a>
-          <button type="button" id="langToggle" class="lang-pill" role="switch" aria-label="Switch language 切换语言" aria-checked="false">
+        </nav>
+
+        <div class="header-actions">
+          <!-- Language pill (desktop): sits with the theme toggle, fixed position -->
+          <button type="button" class="lang-pill header-lang-pill" role="switch" aria-label="Switch language 切换语言" aria-checked="false">
             <span class="lang-pill-thumb" aria-hidden="true"></span>
             <span class="lang-pill-opt" data-val="en">En</span>
             <span class="lang-pill-opt" data-val="zh">中文</span>
           </button>
-        </nav>
-
-        <div class="header-actions">
           <!-- Dark mode toggle (desktop only; mobile uses the contact panel toggle) -->
           <div class="theme-toggle-wrapper theme-toggle-wrapper--header">
             <label class="switch">
