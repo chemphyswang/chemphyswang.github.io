@@ -421,81 +421,20 @@
   }
 
   /* ============================================
-     Header theme toggle: pill style like En/中文
-     (overrides main.css .switch chrome, header only)
+     Header theme toggle: original switch, scaled
+     down proportionally (font-size drives all em
+     sizing in main.css .switch), shadow removed
      ============================================ */
   .theme-toggle-wrapper--header {
     font-size: 18px;
     margin-right: 0;
     margin-left: 0;
-    --trans-dur: 0.3s;
   }
   .theme-toggle-wrapper--header input.switch__input {
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: none;
-    width: 2.6em;
-    height: 1.35em;
-  }
-  .theme-toggle-wrapper--header input.switch__input:checked {
-    background-color: transparent;
-  }
-  .theme-toggle-wrapper--header .switch__inner,
-  .theme-toggle-wrapper--header .switch__inner-icons {
-    top: 0.225em;
-    left: 0.225em;
-    width: 1.9em;
-    height: 0.9em;
-  }
-  .theme-toggle-wrapper--header .switch__inner:before,
-  .theme-toggle-wrapper--header .switch__inner-icons {
-    transform: translateX(-1.15em);
-  }
-  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner:before,
-  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner-icons {
-    transform: translateX(1.15em);
-  }
-  .theme-toggle-wrapper--header .switch__inner:before {
-    background-color: #011f5b;
-  }
-  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner:before {
-    background-color: #011f5b;
-  }
-  .theme-toggle-wrapper--header .switch__inner-icons .switch__icon {
-    color: #ffffff;
-    top: 0.1em;
-    left: 0.1em;
-    width: 0.7em;
-    height: 0.7em;
-    transform: translateX(1.15em);
-  }
-  .theme-toggle-wrapper--header .switch__inner-icons .switch__icon:nth-child(2) {
-    right: 0.1em;
-  }
-  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner-icons .switch__icon:first-of-type {
-    transform: translateX(-1.15em) rotate(-360deg);
-  }
-  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner-icons .switch__icon:nth-of-type(2) {
-    transform: translateX(-1.15em) rotate(360deg);
-  }
-  .theme-toggle-wrapper--header .switch__icon {
-    color: rgba(0, 0, 0, 0.3);
-    top: 0.3em;
-    left: 0.3em;
-    width: 0.75em;
-    height: 0.75em;
-  }
-  .theme-toggle-wrapper--header .switch__icon:nth-of-type(2) {
-    right: 0.3em;
-  }
-  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__icon {
-    color: rgba(255, 255, 255, 0.35);
-  }
-  .theme-toggle-wrapper--header input.switch__input:checked ~ .switch__inner-icons .switch__icon {
-    color: #ffffff;
   }
   [data-theme="dark"] .theme-toggle-wrapper--header input.switch__input {
-    border-color: rgba(255, 255, 255, 0.28);
+    background-color: hsl(0, 0%, 100%);
   }
 
   /* 移动端适配 */
