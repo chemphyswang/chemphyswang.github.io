@@ -927,6 +927,8 @@
             <a href="{{ site.baseurl }}/publications/"{% if url == '/publications/' %} class="is-current"{% endif %}><span class="lang-en">Publications</span><span class="lang-zh">研究成果</span></a>
             <span class="nav-dropdown-menu" role="menu">
               <a href="{{ site.baseurl }}/publications/" class="nav-dropdown-all"><span class="lang-en">All</span><span class="lang-zh">全部</span></a>
+              <!-- Keep in sync with the Preprints section in _includes/publications.html:
+                   remove this entry when no preprints remain; restore it when one is added. -->
               <a href="{{ site.baseurl }}/publications/#preprint"><span class="lang-en">Preprints</span><span class="lang-zh">预印本</span></a>
               <a href="{{ site.baseurl }}/publications/#year-2026">2026</a>
               <a href="{{ site.baseurl }}/publications/#year-2025">2025</a>
