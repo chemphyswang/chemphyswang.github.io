@@ -271,10 +271,6 @@
   .avatar-dropdown.open .avatar-menu {
     display: block;
   }
-  /* Hover opens the menu too, same interaction as the Publications dropdown */
-  .avatar-dropdown:hover .avatar-menu {
-    display: block;
-  }
   .avatar-menu-header {
     padding: 10px 16px 8px;
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -1269,6 +1265,23 @@
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeAll();
     });
+
+    /* Hover opens like the Publications dropdown: mouseenter opens, and a short
+       close delay bridges the 10px gap between the avatar and the menu so the
+       menu survives the pointer's trip across it. */
+    var hoverTimer = null;
+    function openMenuHover() {
+      clearTimeout(hoverTimer);
+      dd.classList.add('open');
+      btn.classList.add('active');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+    function queueCloseHover() {
+      clearTimeout(hoverTimer);
+      hoverTimer = setTimeout(closeAll, 40);
+    }
+    dd.addEventListener('mouseenter', openMenuHover);
+    dd.addEventListener('mouseleave', queueCloseHover);
   })();
   </script>
 
