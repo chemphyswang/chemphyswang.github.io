@@ -152,7 +152,6 @@
     align-items: center;
     gap: 20px;
     flex-shrink: 0;
-    margin-left: auto;
   }
 
   /* Row 2: name (left) + primary nav (right), with a divider above */
@@ -455,21 +454,34 @@
     border-color: rgba(255, 255, 255, 0.5);
   }
 
-  /* Desktop language pill lives in header-actions next to the theme
-     toggle; the generic .lang-pill left margin is not needed there.
-     Order: lang pill · theme toggle · avatar. */
+  /* Desktop toggles (language pill + theme switch) sit left of the avatar,
+     stacked vertically and left-aligned. Nav + avatar stay right-aligned. */
+  .header-toggles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-right: 14px;
+    flex-shrink: 0;
+  }
+  /* The generic .lang-pill carries an 18px left margin for inline use;
+     inside the stacked toggles both buttons must flush left and share
+     the theme switch's width (2.75em at 18px font-size ≈ 50px). */
+  .header-toggles .lang-pill {
+    margin-left: 0;
+    width: 50px;
+  }
+  .header-toggles .lang-pill-opt {
+    flex: 1;
+    padding: 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+  }
   .header-actions {
     align-items: center;
-  }
-  .header-actions .lang-pill {
-    order: 1;
-    margin-left: 0;
-  }
-  .header-actions .theme-toggle-wrapper--header {
-    order: 2;
-  }
-  .header-actions .avatar-dropdown {
-    order: 3;
+    margin-left: 32px;
   }
 
   /* ============================================
@@ -518,6 +530,16 @@
     }
     .avatar-dropdown {
       display: none;
+    }
+    /* Toggles keep their old spot (right end, horizontal) on tablets */
+    .header-actions {
+      margin-left: auto;
+    }
+    .header-toggles {
+      flex-direction: row;
+      align-items: center;
+      gap: 14px;
+      margin-right: 0;
     }
     .header-nav {
       order: 10;
@@ -577,6 +599,9 @@
   /* Mobile portrait: pin the Penn logo to the far right */
   @media (max-width: 480px) and (orientation: portrait) {
     .header-actions {
+      display: none;
+    }
+    .header-toggles {
       display: none;
     }
     .header-logo {
@@ -922,7 +947,7 @@
         <button type="button" class="lang-pill mobile-lang-pill" role="switch" aria-label="Switch language 切换语言" aria-checked="false">
           <span class="lang-pill-thumb" aria-hidden="true"></span>
           <span class="lang-pill-opt" data-val="en">En</span>
-          <span class="lang-pill-opt" data-val="zh">中文</span>
+          <span class="lang-pill-opt" data-val="zh">中</span>
         </button>
 
         <a class="header-logo" href="{{ site.baseurl }}/" aria-label="{{ site.owner.name }}">
@@ -960,33 +985,34 @@
         </nav>
 
         <div class="header-actions">
-          <!-- Language pill (desktop): sits with the theme toggle, fixed position -->
-          <button type="button" class="lang-pill header-lang-pill" role="switch" aria-label="Switch language 切换语言" aria-checked="false">
-            <span class="lang-pill-thumb" aria-hidden="true"></span>
-            <span class="lang-pill-opt" data-val="en">En</span>
-            <span class="lang-pill-opt" data-val="zh">中文</span>
-          </button>
-          <!-- Dark mode toggle (desktop only; mobile uses the contact panel toggle) -->
-          <div class="theme-toggle-wrapper theme-toggle-wrapper--header">
-            <label class="switch">
-              <input class="switch__input" type="checkbox" role="switch" name="dark" aria-label="Toggle dark mode" />
-              <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
-                <use href="#icon-sun" />
-              </svg>
-              <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
-                <use href="#icon-moon" />
-              </svg>
-              <span class="switch__inner"></span>
-              <span class="switch__inner-icons">
+          <!-- Language pill + theme switch, stacked vertically and left-aligned, left of the avatar -->
+          <div class="header-toggles">
+            <button type="button" class="lang-pill header-lang-pill" role="switch" aria-label="Switch language 切换语言" aria-checked="false">
+              <span class="lang-pill-thumb" aria-hidden="true"></span>
+              <span class="lang-pill-opt" data-val="en">En</span>
+              <span class="lang-pill-opt" data-val="zh">中</span>
+            </button>
+            <div class="theme-toggle-wrapper theme-toggle-wrapper--header">
+              <label class="switch">
+                <input class="switch__input" type="checkbox" role="switch" name="dark" aria-label="Toggle dark mode" />
                 <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
                   <use href="#icon-sun" />
                 </svg>
                 <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
                   <use href="#icon-moon" />
                 </svg>
-              </span>
-              <span class="switch__sr">Dark Mode</span>
-            </label>
+                <span class="switch__inner"></span>
+                <span class="switch__inner-icons">
+                  <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                    <use href="#icon-sun" />
+                  </svg>
+                  <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                    <use href="#icon-moon" />
+                  </svg>
+                </span>
+                <span class="switch__sr">Dark Mode</span>
+              </label>
+            </div>
           </div>
 
           <!-- Avatar with contact dropdown (desktop) -->
