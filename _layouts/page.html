@@ -354,6 +354,28 @@
     cursor: pointer;
   }
 
+  /* Dark mode row pinned to the bottom of the avatar menu (desktop) */
+  .avatar-menu-theme {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 13.5px;
+    color: #333332;
+  }
+  .avatar-menu-theme > svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    color: #011f5b;
+  }
+  .avatar-menu-theme .theme-toggle-wrapper--panel {
+    margin-left: auto;
+    font-size: 15px;
+  }
+
   [data-theme="dark"] .avatar-menu {
     background: #1c1c22;
     border-color: rgba(255, 255, 255, 0.08);
@@ -379,6 +401,13 @@
     color: #a9a9b3;
   }
   [data-theme="dark"] .avatar-share-qr-back {
+    color: #6ea8ff;
+  }
+  [data-theme="dark"] .avatar-menu-theme {
+    border-top-color: rgba(255, 255, 255, 0.08);
+    color: #d4d4dc;
+  }
+  [data-theme="dark"] .avatar-menu-theme > svg {
     color: #6ea8ff;
   }
   [data-theme="dark"] .header-avatar-btn {
@@ -454,8 +483,8 @@
     border-color: rgba(255, 255, 255, 0.5);
   }
 
-  /* Desktop toggles (language pill + theme switch) sit left of the avatar,
-     stacked vertically and left-aligned. Nav + avatar stay right-aligned. */
+  /* Desktop toggles: only the language pill sits left of the avatar (the
+     theme switch moved into the avatar menu). Nav + avatar stay right-aligned. */
   .header-toggles {
     display: flex;
     flex-direction: column;
@@ -487,12 +516,20 @@
   /* ============================================
      Header theme toggle: original switch, scaled
      down proportionally (font-size drives all em
-     sizing in main.css .switch), shadow removed
-     ============================================ */
+     sizing in main.css .switch), shadow removed.
+     On desktop the toggle lives inside the avatar
+     menu (like the mobile panel); the header copy
+     remains only for tablets (≤768px). */
   .theme-toggle-wrapper--header {
     font-size: 18px;
     margin-right: 0;
     margin-left: 0;
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .header-toggles .theme-toggle-wrapper--header {
+      display: block;
+    }
   }
   .theme-toggle-wrapper--header input.switch__input {
     box-shadow: none;
@@ -1039,6 +1076,33 @@
                 <img src="{{ site.baseurl }}/images/qr-home.png" alt="WeChat QR code 微信二维码" width="150" height="150">
                 <p><span class="lang-en">Scan with WeChat to share the homepage</span><span class="lang-zh">微信扫一扫，分享主页</span></p>
                 <button type="button" class="avatar-share-qr-back"><span class="lang-en">&larr; Back</span><span class="lang-zh">&larr; 返回</span></button>
+              </div>
+
+              <!-- Dark mode toggle lives in this menu (desktop), like the mobile panel -->
+              <div class="avatar-menu-theme">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.1,14.9c-3-0.5-5.5-3-6-6C8.8,7.1,9.1,5.4,9.9,4c0.4-0.8-0.4-1.7-1.2-1.4C4.6,4,1.8,7.9,2,12.5c0.2,5.1,4.4,9.3,9.5,9.5c4.5,0.2,8.5-2.6,9.9-6.6c0.3-0.8-0.6-1.7-1.4-1.2C18.6,14.9,16.9,15.2,15.1,14.9z" /></svg>
+                <span><span class="lang-en">Dark Mode</span><span class="lang-zh">夜间模式</span></span>
+                <div class="theme-toggle-wrapper theme-toggle-wrapper--panel">
+                  <label class="switch">
+                    <input class="switch__input" type="checkbox" role="switch" name="dark" aria-label="Toggle dark mode" />
+                    <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                      <use href="#icon-sun" />
+                    </svg>
+                    <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                      <use href="#icon-moon" />
+                    </svg>
+                    <span class="switch__inner"></span>
+                    <span class="switch__inner-icons">
+                      <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                        <use href="#icon-sun" />
+                      </svg>
+                      <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                        <use href="#icon-moon" />
+                      </svg>
+                    </span>
+                    <span class="switch__sr">Dark Mode</span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
