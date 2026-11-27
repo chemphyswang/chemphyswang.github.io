@@ -11,6 +11,14 @@ title: News
 {: .lang-zh}
 
 <div class="news-grid">
+  <div class="news-card news-card--publication">
+    <div class="news-meta">
+      <span class="news-date"><span class="lang-en">November 2026</span><span class="lang-zh">2026年11月</span></span>
+      <span class="news-tag news-tag--publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span></span>
+    </div>
+    <p><span class="lang-en">Congratulations to Ruiyang and Gengchen — their paper, <strong>"Achieving Long Persistent Luminescence in Organic Materials for Light-Modulated Electronic Devices"</strong>, has been accepted by <em>Adv. Funct. Mater.</em></span><span class="lang-zh">恭喜万睿洋和李庚辰，论文<strong>"Achieving Long Persistent Luminescence in Organic Materials for Light-Modulated Electronic Devices"</strong>被 <em>Adv. Funct. Mater.</em> 接收。</span></p>
+  </div>
+
   <div class="news-card news-card--activity">
     <div class="news-meta">
       <span class="news-date"><span class="lang-en">October 2026</span><span class="lang-zh">2026年10月</span></span>
