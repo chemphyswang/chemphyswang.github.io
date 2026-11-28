@@ -16,7 +16,7 @@ title: News
       <span class="news-date"><span class="lang-en">November 2026</span><span class="lang-zh">2026年11月</span></span>
       <span class="news-tag news-tag--publication"><span class="lang-en">Publication</span><span class="lang-zh">论文</span></span>
     </div>
-    <p><span class="lang-en">Congratulations to Ruiyang and Gengchen — their paper, <a href="https://doi.org/10.1002/adfm.79897"><strong>"Achieving Long Persistent Luminescence in Organic Materials for Light-Modulated Electronic Devices"</strong></a>, is out in <em>Adv. Funct. Mater.</em></span><span class="lang-zh">恭喜万睿洋和李庚辰，论文<a href="https://doi.org/10.1002/adfm.79897"><strong>"Achieving Long Persistent Luminescence in Organic Materials for Light-Modulated Electronic Devices"</strong></a>在 <em>Adv. Funct. Mater.</em> 正式发表。</span></p>
+    <p><span class="lang-en">Congratulations to Ruiyang and Gengchen — their paper, <a href="https://doi.org/10.1002/adfm.79897"><strong>"Achieving Long Persistent Luminescence in Organic Materials for Light-Modulated Electronic Devices"</strong></a>, is out in <em>Adv. Funct. Mater.</em></span><span class="lang-zh">恭喜万睿洋和李庚辰，论文<a href="https://doi.org/10.1002/adfm.79897"><strong>"Achieving Long Persistent Luminescence in Organic Materials for Light-Modulated Electronic Devices"</strong></a>被 <em>Adv. Funct. Mater.</em> 接收。</span></p>
   </div>
 
   <div class="news-card news-card--activity">
